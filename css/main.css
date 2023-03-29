@@ -46,3 +46,34 @@
     font-size: 16px;
     color: black;
 }
+
+.promotion {
+    height: 300px;
+    background: #ffffff;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.promotion a:last-child {
+    color: #ea433e;
+}
+
+.event {
+    height: 300px;
+    background: #eaeaea;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.event a:last-child {
+    color: #3b86f8;
+}
+
+.footer {
+    height: 250px;
+    background: #507f55;
+}

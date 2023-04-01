@@ -46,3 +46,31 @@
   font-size: 16px;
   color: black;
 }
+
+.reservation {
+  position: relative;
+  background-color: grey;
+  width: 330px;
+  height: 250px;
+}
+
+.quickTab {
+  width: 330px;
+  display: table;
+}
+
+.quickTab ul li {
+  display: table-cell;
+  width: 165px;
+  height: 30px;
+  color: #f4f4f4;
+  vertical-align: top;
+  /* sorry couldn't center text vertically */
+  padding-top: 4%;
+  text-align: center;
+}
+
+.quickTab ul li:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}

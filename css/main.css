@@ -47,9 +47,11 @@
   color: black;
 }
 
+/* RESERVATION */
+
 .reservation {
   position: relative;
-  background-color: grey;
+  background-color: #2B2A27;
   width: 330px;
   height: 250px;
 }
@@ -72,5 +74,42 @@
 
 .quickTab ul li:hover {
   cursor: pointer;
-  background-color: darkgray;
+  background-color: #000;
+}
+
+/* RESERVATION / Calender */
+
+.calender{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.calender input[type="date"]{
+  position: relative;
+  text-align: center;
+  /* Add padding but 265 x 40 remains the same */
+  box-sizing: border-box;
+  padding: 5px;
+  width: 265px;
+  height: 40px;
+  border-radius: 5px; 
+  background: #f4f4f4 url(../images/calendar_icon.jpg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.calender input[type="date"]::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+  /* noonsokim */
+  width: 40px;
+  opacity: 0;
+}
+
+.reservation span{
+  color: white;
 }

@@ -126,7 +126,6 @@
 
 .wrapper{
   display: flex;
-  /* justify-content: space-evenly; */
 }
 
 .valueBtn{
@@ -151,9 +150,26 @@
   font-weight: 600;
   cursor: pointer;
 }
- .valueBtn span.num{
+.valueBtn span.num{
   font-size: 15px;
   border-right: 2px solid rgba(0, 0, 0, 0.2);
   border-left: 2px solid rgba(0, 0, 0, 0.2);
   pointer-events: none;
+}
+
+.buyNow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 55px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: #FEE50F;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }

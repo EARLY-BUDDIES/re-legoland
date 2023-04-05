@@ -1,3 +1,23 @@
+//   <!-- RESERVATION --> / quickTab
+
+const ticketTab = document.getElementById("ticketTab");
+const hotelTab = document.getElementById("hotelTab");
+
+// Add click event listener to each tab element
+ticketTab.addEventListener("click", () => {
+  // Change background color of clicked tab to #2B2A27
+  ticketTab.style.backgroundColor = "#2B2A27";
+  // Change background color of other tab to #000
+  hotelTab.style.backgroundColor = "#000";
+});
+   
+hotelTab.addEventListener("click", () => {
+  hotelTab.style.backgroundColor = "#2B2A27";
+  ticketTab.style.backgroundColor = "#000";
+});
+
+
+//   <!-- RESERVATION --> / quantityTag
 const adultPlus = document.querySelector("#adultPlus"),
       adultMinus = document.querySelector("#adultMinus"),
       adultNum = document.querySelector("#adultNum"),

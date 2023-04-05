@@ -70,11 +70,12 @@
   /* sorry couldn't center text vertically */
   padding-top: 4%;
   text-align: center;
+  background-color: #000;
 }
 
 .quickTab ul li:hover {
   cursor: pointer;
-  background-color: #000;
+  background-color: #2B2A27;
 }
 
 /* RESERVATION / Calender */
@@ -82,7 +83,7 @@
 .calender{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .calender input[type="date"]{
@@ -110,6 +111,46 @@
   opacity: 0;
 }
 
-.reservation span{
+.reservation .quantityTag{
+  display: flex;
+  margin-top: 7%;
+  justify-content: center;
+  text-align: center;
   color: white;
+  font-size: 15px;
+  gap: 30%;
+}
+
+.wrapper{
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.valueBtn{
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 2% 0 0 10%;
+}
+
+.valueBtn:nth-child(2){
+  margin-left: 2px;
+}
+
+.valueBtn span{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+ .valueBtn span.num{
+  font-size: 15px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }

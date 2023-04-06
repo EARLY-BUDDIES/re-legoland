@@ -35,18 +35,6 @@
   background: #b22520;
 }
 
-.weather {
-  height: 60px;
-  background: #f4f4f4;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.weather a {
-  font-size: 16px;
-  color: black;
-}
-
 /* RESERVATION */
 
 .reservation {

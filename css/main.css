@@ -73,7 +73,43 @@
     color: #3b86f8;
 }
 
+.sns {
+    height: 250px;
+    padding-top: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sns a:first-child {
+    font-size: 20px;
+}
+
+.sns a:last-child {
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .footer {
     height: 250px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: white;
     background: #507f55;
+}
+
+.footer a {
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.footer_title {
+    padding-bottom: 12px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
 }

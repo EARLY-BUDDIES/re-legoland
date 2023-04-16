@@ -21,6 +21,17 @@
   <meta property="twitter:url" content="https://LEGOLAND.co.kr" />
 
   <link rel="icon" href="./favicon.png">
+
+  <!-- favicon -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,6 +81,39 @@
 
   <!-- RESERVATION -->
 
+  <div class="reservation">
+
+    <div class="quickTab">
+      <ul>
+        <li id="ticketTab" class="ticketReserv active">티켓예매</li>
+        <li id="hotelTab" class="hotelReserve">호텔예약</li>
+      </ul>
+    </div>
+  
+    <div class="calendar">
+      <input type="date">
+    </div>
+  
+    <div class="quantityTag">
+      <span id="adult">성인</span>
+      <span id="children">어린이</span>
+    </div>
+    <div class="wrapper">
+      <div class="valueBtn">
+        <span id="adultMinus" class="minus">-</span>
+        <span id="adultNum" class="num">01</span>
+        <span id="adultPlus" class="plus">+</span>
+      </div>
+      <div class="valueBtn">
+        <span id="childrenMinus" class="minus">-</span>
+        <span id="childrenNum" class="num">00</span>
+        <span id="childrenPlus" class="plus">+</span>
+      </div>
+    </div>
+  
+    <div class="buyNow">BUY NOW</div>
+   </div>
+   
 <div class="reservation">
 
   <div class="quickTab">
@@ -111,53 +155,52 @@
 
   <!-- PROMOTION -->
     <div class="promotion">
-
+      <a>Ticket</a>
+      <a>Promotion</a>
     </div>
-  </section>
 
   <!-- SEASON EVENT -->
-  <section>
-    <div class="inner">
-  
+    <div class="event">
+      <a>Season</a>
+      <a>Event</a>
     </div>
-  </section>
 
 
   <!-- GUIDE -->
 
 
   <!-- SNS -->
+    <div class="sns">
+      <a>instagram |</a>
+      <a>#레고랜드</a>
+      <a>해시태그로 올려주세요!</a>
+    </div>
 
   <!-- FOOTER -->
   <footer>
-    <div class="inner">
+    <div class="footer">
+      <!-- title -->
+      <div class="footer_title">
+        <a>Policy</a>
+        <a>Terms & Conditions</a>
+        <a>Our Company</a>
+      </div>
+      
+      <!-- details -->
 
-      <ul class="menu">
-        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-        <li><a href="javascript:void(0)">카드 이용약관</a></li>
-        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-      </ul>
-
-      <div class="btn-group">
-        <a href="javascript:void(0)">찾아오시는 길</a>
-        <a href="javascript:void(0)">신규입점제의</a>
-        <a href="javascript:void(0)">사이트 맵</a>
+      <div class="container">
+        <div class="item">Privacy Policy</div>
+        <div class="item">Refunds & Cancellation Policy</div>
       </div>
 
-      <div class="info">
-        <span>사업자등록번호 : 617-81-99974 | 통신판매업신고번호 : 제 2021-강원춘천-0527호 |</span>
-        <span>대표자 : 매튜 폴 조엣 | 사업자등록번호 : 617-81-99974</span>
-        <span>대표번호 033) 815-2300 (연중 10:00~18:00 / 점심 휴식 12:00~13:00)</span>
+      <div class="container">
+        <div class="item">전자상거래 이용약관</div>
+        <div class="item">홈페이지 이용약관</div>
+        <div class="item">연간이용권 이용약관</div>
+        <div class="item">1일이용권 이용약관</div>
+        <div class="item">시즌패스 이용약관</div>
       </div>
-
-      <p class="copyright">
-        &copy; <span class="this-year"></span> The LEGO Group
-      </p>
-      <img src="" alt="" class="logo">
-
+      
     </div>
   </footer>
 

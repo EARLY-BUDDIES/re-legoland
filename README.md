@@ -1,4 +1,4 @@
 # re-legoland
 
-I hate git
+I love git
 

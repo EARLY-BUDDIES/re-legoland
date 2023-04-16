@@ -373,9 +373,9 @@
 }
 
 .vl {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+  /* display: inline-block; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* margin: 0 auto;  */
   /* position: absolute; */
   /* top: 50%; left: 50%;
@@ -385,11 +385,10 @@
   background-color: #DBDBDB;
 }
 
-/* .temperature{
+.temperature{
   font-size: 50px;
   font-weight: 900;
   color: black;
-
 }
 
 .weather img{
@@ -398,14 +397,30 @@
   margin-right: 2%;
 }
 
+.openingHours{
+  padding-right: 10px;
+}
+
 .openingHours > div:first-child {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 3%;
 }
 
 .openingHours > div:last-child {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 800;
-} */
+} 
 
+.parkInfo{
+  margin-left: 10px;
+  width: 270px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.ticketSearch{
+  width: 270px;
+  height: 70px;
+  font-size: 20px;
+}

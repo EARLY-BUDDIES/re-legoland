@@ -241,12 +241,6 @@
     font-size: 14px;
 }
 
-  position: relative;
-  background-color: #2B2A27;
-  width: 330px;
-  height: 250px;
-}
-
 .quickTab {
   width: 330px;
   display: table;

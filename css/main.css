@@ -1,38 +1,38 @@
 .top-line {
-    background: #000;
-    padding-top: 10px;
-    padding-right: 335px;
-    text-align: right;
-    height: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    color: aliceblue;
+  background: #000;
+  padding-top: 10px;
+  padding-right: 335px;
+  text-align: right;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: aliceblue;
 }
 
 .top-line a {
-    padding-right: 12px;
+  padding-right: 12px;
 }
 
 .nav-bar {
-    background: #f9de4a;
-    padding: 100px 335px 20px;
-    text-align: center;
+  background: #f9de4a;
+  padding: 100px 335px 20px;
+  text-align: center;
 }
 
 .nav-bar a {
-    padding-right: 30px;
-    font-size: 17px;
-    font-weight: 600;
+  padding-right: 30px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .nav-bar a:last-child {
-    padding-right: 0px;
-    
+  padding-right: 0px;
+  
 }
 
 .slider {
-    height: 540px;
-    background: #b22520;
+  height: 540px;
+  background: #b22520;
 }
 
 /* RESERVATION */
@@ -239,4 +239,128 @@
     padding-bottom: 5px;
     font-weight: 400;
     font-size: 14px;
+}
+
+  position: relative;
+  background-color: #2B2A27;
+  width: 330px;
+  height: 250px;
+}
+
+.quickTab {
+  width: 330px;
+  display: table;
+}
+
+.quickTab ul li {
+  display: table-cell;
+  width: 165px;
+  height: 30px;
+  color: #f4f4f4;
+  vertical-align: top;
+  /* sorry couldn't center text vertically */
+  padding-top: 4%;
+  text-align: center;
+  background-color: #000;
+}
+
+.quickTab ul li.active {
+  background-color: #2B2A27;
+}
+
+.quickTab ul li:hover {
+  cursor: pointer;
+} 
+
+/* RESERVATION / Calendar */
+
+.calendar{
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.calendar input[type="date"]{
+  position: relative;
+  text-align: center;
+  /* Add padding but 265 x 40 remains the same */
+  box-sizing: border-box;
+  padding: 5px;
+  width: 265px;
+  height: 40px;
+  border-radius: 5px; 
+  background: #f4f4f4 url(../images/calendar_icon.jpg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.calendar input[type="date"]::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+  /* noonsokim */
+  width: 40px;
+  opacity: 0;
+}
+
+.reservation .quantityTag{
+  display: flex;
+  margin-top: 7%;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  gap: 30%;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.valueBtn{
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin: 2% 0 0 10%;
+}
+
+.valueBtn:nth-child(2){
+  margin-left: 2px;
+}
+
+.valueBtn span{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.valueBtn span.num{
+  font-size: 15px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.buyNow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 55px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: #FEE50F;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }

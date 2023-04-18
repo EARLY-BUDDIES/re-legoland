@@ -385,16 +385,19 @@
 }
 
 .temperature{
+  display: flex;
+}
+
+.celsius{
   font-size: 50px;
   font-weight: 900;
   color: black;
-  margin-right: 1%;
 }
 
 .weather img{
   height: 60px;
   width: 60px;
-  margin-right: 1%;
+  margin-right: 2%;
 }
 
 .openingHours{

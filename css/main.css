@@ -373,7 +373,7 @@
   padding: 0;
 }
 
-.vl {
+.vl{
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -392,12 +392,14 @@
   font-size: 50px;
   font-weight: 900;
   color: black;
+  margin-right: 2%;
 }
 
 .weather img{
   height: 60px;
   width: 60px;
-  margin-right: 2%;
+  /* margin-right: 3%; */
+  padding-right: 20px;
 }
 
 .openingHours{
@@ -420,6 +422,7 @@
   background-color: white;
   border-radius: 3px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .parkInfo{

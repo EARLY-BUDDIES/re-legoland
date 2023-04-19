@@ -358,3 +358,82 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+
+/* WEATHER */
+
+.weather{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 160px;
+  box-sizing: border-box; 
+  background: #f4f4f4;
+  padding: 0;
+}
+
+.vl{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 3px;
+  height: 90px;
+  background-color: #DBDBDB;
+  /* Karma will hit me back but I only live today */
+  margin-left: 3%;
+}
+
+.temperature{
+  display: flex;
+}
+
+.celsius{
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  margin-right: 2%;
+}
+
+.weather img{
+  height: 60px;
+  width: 60px;
+  /* margin-right: 3%; */
+  padding-right: 20px;
+}
+
+.openingHours{
+  padding-right: 20px;
+}
+
+.openingHours > div:first-child {
+  padding-bottom: 2%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.openingHours > div:last-child {
+  font-size: 28px;
+  font-weight: 800;
+} 
+
+.weather button{
+  background-color: white;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.parkInfo{
+  margin: 0 1% 0 4%;
+  width: 270px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.ticketSearch{
+  width: 270px;
+  height: 70px;
+  font-size: 20px;
+}

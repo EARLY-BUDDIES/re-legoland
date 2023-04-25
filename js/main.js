@@ -56,8 +56,12 @@ childrenMinus.addEventListener("click", ()=>{
   }
 });
 
+// WEATHER
 
+const apiKey = "317d1cdbbcf8d67b187b125a53b7c13e";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
+
+const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather() {
   const response = await fetch(apiUrl + `&appid=${apiKey}`);
@@ -65,7 +69,17 @@ async function checkWeather() {
 
   console.log(data);
 
-  document.querySelector(".celsius").innerHTML = data.main.temp + "°";
+  document.querySelector(".celsius").innerHTML = Math.round(data.main.temp) + "°";
+
+  if(data.weather[0].main == "Clouds") {
+    weatherIcon.src = "images/clouds.png";
+  } else if(data.weather[0].main == "Clear") {
+    weatherIcon.src = "images/clear.png";
+  } else if(data.weather[0].main == "Rain") {
+    weatherIcon.src = "images/rain.png";
+  } else if(data.weather[0].main == "Drizzle") {
+    weatherIcon.src = "images/drizzle.png";
+  }
 }
  
 checkWeather();

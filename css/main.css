@@ -162,6 +162,8 @@
     cursor: pointer;
   }
 
+/* weather */
+
 .weather {
     height: 60px;
     background: #f4f4f4;
@@ -174,8 +176,10 @@
     color: black;
 }
 
+/* promotion */
+
 .promotion {
-    height: 300px;
+    height: 500px;
     background: #ffffff;
     padding-top: 50px;
     text-align: center;
@@ -185,6 +189,56 @@
 
 .promotion a:last-child {
     color: #ea433e;
+}
+
+.promotion_container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.promotion_box {
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom:30px;
+  width: 300px;
+  height: 340px;
+  border: 1px solid #dbdbdb;
+  float: left;
+}
+
+.promotion_box a:first-child {
+  font-size: 13px;
+  color: black;
+  text-align: center;
+}
+
+.promotion_box a {
+   font-size: 16px;
+   color: black;
+   padding-bottom: 20px;
+   text-align: center;
+  }
+
+.promotion_img {
+    padding-top: 20px;
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.promotion_btn {
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
 }
 
 .event {
@@ -200,8 +254,71 @@
     color: #3b86f8;
 }
 
+.guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+}
+
+.guide img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.guide a{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.guide a:last-child{
+    font-size: 13px;
+    font-weight: bold;
+    color: #7b7b7b;
+}
+
+.guide1 {
+    float: left;
+    margin-left: 45px;
+}
+
+.guide1 a:last-child {
+    margin-left: 92px;
+}
+
+.guide2 {
+    float: left;
+    margin-left: 90px;
+}
+
+.guide2 a:last-child {
+    margin-left: 73px;
+}
+
+.guide3 {
+    float: left;
+    margin-left: 90px;
+}
+
+.guide3 a:last-child {
+    margin-left: 79px;
+}
+
+.guide4 {
+    float: left;
+    margin-left: 90px;
+}
+
+.guide4 a:last-child {
+    margin-left: 110px;
+}
+
 .sns {
-    height: 250px;
+    margin-top: 30px;
+    height: 400px;
     padding-top: 50px;
     font-size: 15px;
     font-weight: 700;
@@ -215,6 +332,15 @@
 .sns a:last-child {
     font-size: 15px;
     font-weight: 400;
+}
+
+.sns img {
+    padding: 5px;
+    width: 200px;
+}
+
+.sns_img {
+    margin: 60px 0;
 }
 
 .footer {

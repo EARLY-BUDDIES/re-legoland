@@ -57,7 +57,6 @@ childrenMinus.addEventListener("click", ()=>{
 });
 
 // WEATHER
-
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
 
 const weatherIcon = document.querySelector(".weather-icon");

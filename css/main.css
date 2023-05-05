@@ -276,13 +276,21 @@ font-weight: 700; */
   left: -100%;
 }
 
+/* will be removed later */
+span.next, span.prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 .dotsContainer{
   position: absolute;
   bottom: 5px;
   z-index: 3;
   left: 50%;
   transform: translateX(-50%);
-  top: 172%;
+  top: 150%;
 }
 
 .dotsContainer .dot{
@@ -297,6 +305,36 @@ font-weight: 700; */
 
 .dotsContainer .active{
   background-color: #555;
+}
+
+@keyframes next1{
+  from{
+    Left: 0%
+  }to{
+    Left: -100%;
+  }
+}
+@keyframes next2{
+  from{
+    Left: 100%
+  }to{
+    Left: 0%;
+  }
+}
+
+@keyframes prev1{
+  from{
+    Left: 0%
+  }to{
+    Left: 100%;
+  }
+}
+@keyframes prev2{
+  from{
+    Left: -100%
+  }to{
+    Left: 0%;
+  }
 }
 
 .guide {

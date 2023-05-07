@@ -87,55 +87,57 @@ async function checkWeather() {
  
 checkWeather();
 
-// Access the Images
-let slideImages = document.querySelectorAll('img');
+/* SEASON EVENT / Slider */
 
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
+let slides = document.querySelectorAll('.slide');
+let btns = document.querySelectorAll('.btn');
+let currentSlide = 1;
 
-let dots = document.querySelectorAll('.dot');
-
-let counter = 0;
-
-// Code for prev btn
-next.addEventListener('click', slideNext);
-function slideNext(){
-  slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-  if(counter >= slideImages.length-1){
-    counter = 0;
-  }else{
-    counter++;
-  }
-  slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-}
-
-prev.addEventListener('click', slidePrev);
-function slidePrev(){
-  slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-  if(counter == 0){
-    counter = slideImages.length-1;
-  }else{
-    counter--;
-  }
-  slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-}
-
-// Auto slider
-function autoSliding(){
-  deletInterval = setInterval(timer, 500);
-  function timer(){
-    slideNext();
-  }
-}
-autoSliding();
-
-// Stop auto sliding when mouse is over
-const container = document.querySelector('.slider-container');
-container.addEventListener('mouseover', function(){
-  clearInterval(deletInterval);
+// Javascript for image slider manual navigation
+let manualNav = function(manual){
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  
+  btns.forEach((btn) => {
+    btn.classList.remove('active');
+  });
 });
 
-// Resume sliding when mouse is out
-container.addEventListener('mouseout', autoSliding);
+  slides[manual].classList.add('active');
+  btns[manual].classList.add('active');
+}
 
-// Add and remove active class from the indicators
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualNav(i);
+    currentSlide = i;
+  })
+});
+
+// Javascript for image slider autoplay navigation
+let repeat = function(activeClass){
+  let active = document.getElementsByClassName('active');
+  let i = 1;
+
+  let repeater = () => {
+    setTimeout(function(){
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active')
+      })
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 3000);
+  }
+  repeater();
+}
+repeat();

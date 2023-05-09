@@ -1,3 +1,18 @@
+// slider
+
+document.querySelector('.slider_btn1').addEventListener('click', function(){
+  document.querySelector('.slider').style.transform =  'translate(0vw)'; 
+});
+
+document.querySelector('.slider_btn2').addEventListener('click', function(){
+  document.querySelector('.slider').style.transform =  'translate(-100vw)'; 
+});
+
+document.querySelector('.slider_btn3').addEventListener('click', function(){
+  document.querySelector('.slider').style.transform =  'translate(-200vw)'; 
+});
+
+
 //   <!-- RESERVATION --> / quickTab
 
 const ticketTab = document.getElementById("ticketTab");

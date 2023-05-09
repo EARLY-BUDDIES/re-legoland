@@ -1,6 +1,5 @@
-*{
-  margin: 0;
-  padding: 0;
+header {
+    background: #f9de4a;
 }
 
 .top-line {
@@ -18,9 +17,21 @@
   padding-right: 12px;
 }
 
+.main_logo img {
+    width: 330px;
+    height: 80px;
+    display: block; 
+    margin: 10px auto;
+}
+
+.nav_icon img {
+    width: 70px;
+    padding-right: 28px;
+}
+
 .nav-bar {
   background: #f9de4a;
-  padding: 100px 335px 20px;
+  padding: 30px 335px 20px;
   text-align: center;
 }
 
@@ -38,6 +49,18 @@
 .slider {
   height: 540px;
   background: #b22520;
+  width: 300vw;
+  transition: transform 0.5s;
+}
+
+.inner {
+    width: 50vw;
+    height: 300px;
+    float: left;
+}
+
+.inner img {
+    width: 50%;;
 }
 
 /* RESERVATION */

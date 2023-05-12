@@ -1,16 +1,44 @@
 // slider
 
-document.querySelector('.slider_btn1').addEventListener('click', function(){
-  document.querySelector('.slider').style.transform =  'translate(0vw)'; 
-});
+let curPos = 0; // 현재 보여주는 이미지 인덱스 번호
+let positionValue = 0; // 이미지 태그의 위치 값 지정할 변수
+const IMAGE_WIDHT = 500;
 
-document.querySelector('.slider_btn2').addEventListener('click', function(){
-  document.querySelector('.slider').style.transform =  'translate(-100vw)'; 
-});
+const prevBtn = document.querySelector(".slider_btn1");
+const nextBtn = document.querySelector(".slider_btn2");
+const images = document.querySelector(".images");
 
-document.querySelector('.slider_btn3').addEventListener('click', function(){
-  document.querySelector('.slider').style.transform =  'translate(-200vw)'; 
-});
+function next(){
+  if(curPos < 2){
+    prevBtn.removeAttribute('disabled')
+    positionValue -= IMAGE_WIDHT;
+    images.style.transform = `translateX(${positionValue}px)`;
+    curPos += 1;
+  }
+  if(curPos === 2){
+    nextBtn.setAttribute('disabled', 'true'); 
+  }
+}
+
+function prev(){
+  if(curPos > 0){
+    nextBtn.removeAttribute('disabled')
+    positionValue += IMAGE_WIDHT;
+    images.style.transform = `translateX(${positionValue}px)`;
+    curPos -= 1;
+  }
+  if(curPos === 0){
+    prevBtn.setAttribute('disabled', 'true'); 
+  }
+}
+
+function init(){
+  prevBtn.setAttribute('disabled', 'true');  
+  prevBtn.addEventListener("click", prev);
+  nextBtn.addEventListener("click", next);
+}
+
+init();
 
 
 //   <!-- RESERVATION --> / quickTab

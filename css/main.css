@@ -257,12 +257,15 @@ header {
 
 /* SEASON EVENT */
 
-/* text{
-padding-top: 50px;
+.eventText{
 text-align: center;
 font-size: 27px;
 font-weight: 700;
-} */
+padding-bottom: 3%;
+}
+.eventText a:last-child {
+  color: #3b86f8;
+}
 
 .seasonEvent {
   width: 100%;
@@ -276,24 +279,22 @@ font-weight: 700;
 /* SEASON EVENT / Slider */
 .img-slider{
   position: relative;
-  width: 800px;
-  height: 500px;
-  margin: 10px;
-  padding-top: 3%;
+  width: 930px;
+  height: 350px;
 }
 .img-slider .slide{
-  z-index: 1;
   position: absolute;
   width: 100%;
   clip-path: circle(0% at 0 150%);
 }
 .img-slider .slide.active{
-  clip-path: circle(150% at 0 50%);
+  clip-path: none;
   transition: 2s;
   transition-property: clip-path;
 }
 .img-slider .slide img{
   z-index: 1;
+  height: 350px;
   width: 100%;
 }
 .img-slider .navigation{

@@ -47,20 +47,57 @@ header {
 }
 
 .slider {
-  height: 540px;
-  background: #b22520;
-  width: 300vw;
-  transition: transform 0.5s;
+    width: 100%;
+    background: #b22520;
+}
+
+.slider_box {
+  width: 600px;
+  height: 450px;
+  /* background: #b22520; */
 }
 
 .inner {
-    width: 50vw;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ 
+.images {
+    width: 500px;
     height: 300px;
-    float: left;
+    display: flex;
+    position: relative; 
 }
 
-.inner img {
-    width: 50%;;
+.images img {
+     width: 500px;
+     height: 300px;
+}
+
+.slider_btn1 {
+    float: left;
+    background: none;
+    border: none;
+}
+
+.slider_btn1 img {
+    width: 60px;
+    opacity: 50%;
+}
+
+.slider_btn1 img:hover {
+    opacity: 100%;
+}
+
+.slider_btn2 {
+    float: right;
+    background: none;
+    border: none;
+}
+
+.slider_btn2 img {
+    width: 60px;
 }
 
 /* RESERVATION */
@@ -98,7 +135,7 @@ header {
   } 
   
   /* RESERVATION / Calendar */
-  
+
   .calendar{
     display: flex;
     justify-content: center;

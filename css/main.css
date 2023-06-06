@@ -477,30 +477,6 @@ padding-bottom: 3%;
     margin: 60px 0;
 }
 
-.footer {
-    height: 250px;
-    padding-top: 20px;
-    font-weight: 600;
-    color: white;
-    background: #507f55;
-}
-
-.footer a {
-    padding-left: 30px;
-    font-size: 17px;
-}
-
-.footer_title {
-    padding-bottom: 12px;
-}
-
-.container {
-    padding-left: 30px;
-    padding-bottom: 5px;
-    font-weight: 400;
-    font-size: 14px;
-}
-
 .quickTab {
   width: 330px;
   display: table;
@@ -639,7 +615,6 @@ padding-bottom: 3%;
   width: 3px;
   height: 90px;
   background-color: #DBDBDB;
-  /* Karma will hit me back but I only live today */
   margin-left: 3%;
 }
 
@@ -695,4 +670,41 @@ padding-bottom: 3%;
   width: 270px;
   height: 70px;
   font-size: 20px;
+}
+
+/* FOOTER */
+
+footer{
+  position: relative;
+  height: 250px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgb(249, 221, 75);
+}
+
+footer img{
+  width: 150px;
+  height: 100px;
+}
+
+footer .vl{
+  width: 2px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer .footer_title{
+  /* gap: 50px; */
+  padding-bottom: 15px;
+}
+
+footer .copyright{
+  /* display: flex; */
+  font-size: 17px;
+}
+
+footer .SNS img{
+  width: 50px;
+  height: 50px;
 }

@@ -679,8 +679,13 @@ footer{
   height: 250px;
   font-weight: 600;
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.8);
-  background: rgb(249, 221, 75);
+  color: #9a9a9a;
+  background: #323232;
+}
+
+footer .container{
+  flex-wrap: nowrap;
+  display: flex;
 }
 
 footer img{
@@ -695,16 +700,14 @@ footer .vl{
 }
 
 footer .footer_title{
-  /* gap: 50px; */
   padding-bottom: 15px;
 }
 
 footer .copyright{
-  /* display: flex; */
   font-size: 17px;
 }
 
 footer .SNS img{
   width: 50px;
-  height: 50px;
+  height: 45px;
 }

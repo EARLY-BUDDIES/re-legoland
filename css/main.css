@@ -53,7 +53,8 @@ header {
 
 .slider_box {
   width: 600px;
-  height: 450px;
+  height: 410px;
+  margin-left: 280px;
   /* background: #b22520; */
 }
 
@@ -64,10 +65,11 @@ header {
 }
  
 .images {
+    margin-top: 50px;
     width: 500px;
     height: 300px;
     display: flex;
-    position: relative; 
+    position: relative;
 }
 
 .images img {
@@ -79,10 +81,11 @@ header {
     float: left;
     background: none;
     border: none;
+    margin-top: -190px;
 }
 
 .slider_btn1 img {
-    width: 60px;
+    width: 50px;
     opacity: 50%;
 }
 
@@ -91,20 +94,24 @@ header {
 }
 
 .slider_btn2 {
+    margin-top: -190px;
     float: right;
     background: none;
     border: none;
 }
 
 .slider_btn2 img {
-    width: 60px;
+    width: 50px;
 }
 
 /* RESERVATION */
 
 .reservation {
-    position: relative;
+    position: absolute;
     background-color: #2B2A27;
+    top: 42%;
+    right: 250px;
+    z-index: 3;
     width: 330px;
     height: 250px;
   }

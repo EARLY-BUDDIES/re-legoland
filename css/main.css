@@ -639,7 +639,6 @@ padding-bottom: 3%;
 .weather img{
   height: 60px;
   width: 60px;
-  /* margin-right: 3%; */
   padding-right: 20px;
 }
 
@@ -681,40 +680,66 @@ padding-bottom: 3%;
 
 /* FOOTER */
 
-footer{
+footer {
   position: relative;
   height: 250px;
   font-weight: 600;
   font-size: 20px;
-  color: #9a9a9a;
-  background: #323232;
-}
-
-footer .container{
-  flex-wrap: nowrap;
+  color: #161616;
+  background: #F9DD4B;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer img{
-  width: 150px;
-  height: 100px;
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
 }
 
-footer .vl{
-  width: 2px;
-  height: 90px;
+footer .footer_content {
+  margin-right: 15rem; 
+}
+
+
+/* legologos */
+footer img {
+  width: 130px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+footer .vl {
+  width: 1.5px;
+  height: 120px;
   background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 15px;
 }
 
-footer .footer_title{
+footer .footer_title {
   padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
 }
 
-footer .copyright{
+footer .footer_title a {
+  margin: 0 10px;
+}
+
+footer .copyright {
   font-size: 17px;
+  order: 2;
 }
 
-footer .SNS img{
-  width: 50px;
-  height: 45px;
+footer .SNS img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 2%;
+}
+
+footer .contact-info {
+  display: flex;
+  margin-left: auto; 
 }

@@ -313,15 +313,16 @@ padding-bottom: 3%;
 
 .seasonEvent {
   width: 100%;
-  height: 550px;
+  height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background: #eaeaea;
 }
 
 /* SEASON EVENT / Slider */
 .img-slider{
+  margin-top: 50px;
   position: relative;
   width: 930px;
   height: 350px;
@@ -346,6 +347,7 @@ padding-bottom: 3%;
   position: absolute;
   display: flex;
   bottom: 30px;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -358,7 +360,7 @@ padding-bottom: 3%;
   cursor: pointer;
 }
 .img-slider .navigation .btn.active{
-  background: #ea433e;
+  background: #4A4A4A;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -480,30 +482,6 @@ padding-bottom: 3%;
 
 .sns_img {
     margin: 60px 0;
-}
-
-.footer {
-    height: 250px;
-    padding-top: 20px;
-    font-weight: 600;
-    color: white;
-    background: #507f55;
-}
-
-.footer a {
-    padding-left: 30px;
-    font-size: 17px;
-}
-
-.footer_title {
-    padding-bottom: 12px;
-}
-
-.container {
-    padding-left: 30px;
-    padding-bottom: 5px;
-    font-weight: 400;
-    font-size: 14px;
 }
 
 .quickTab {
@@ -644,7 +622,6 @@ padding-bottom: 3%;
   width: 3px;
   height: 90px;
   background-color: #DBDBDB;
-  /* Karma will hit me back but I only live today */
   margin-left: 3%;
 }
 
@@ -662,7 +639,6 @@ padding-bottom: 3%;
 .weather img{
   height: 60px;
   width: 60px;
-  /* margin-right: 3%; */
   padding-right: 20px;
 }
 
@@ -700,4 +676,70 @@ padding-bottom: 3%;
   width: 270px;
   height: 70px;
   font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  height: 250px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #161616;
+  background: #F9DD4B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+footer .footer_content {
+  margin-right: 15rem; 
+}
+
+
+/* legologos */
+footer img {
+  width: 130px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+footer .vl {
+  width: 1.5px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 15px;
+}
+
+footer .footer_title {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer_title a {
+  margin: 0 10px;
+}
+
+footer .copyright {
+  font-size: 17px;
+  order: 2;
+}
+
+footer .SNS img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 2%;
+}
+
+footer .contact-info {
+  display: flex;
+  margin-left: auto; 
 }

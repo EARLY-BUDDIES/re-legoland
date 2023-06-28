@@ -183,3 +183,10 @@ let repeat = function(activeClass){
   repeater();
 }
 repeat();
+
+// Footer
+// Update the copyright year automatically
+
+const yearElement = document.getElementById('year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = currentYear;

@@ -1,5 +1,6 @@
 @media screen and (max-width: 389px) and (max-height: 816px) {
   body {
+    font-family: 'JalnanOTF', sans-serif;
     background-color: #F8D950;
     margin-left: 30px;
     margin-right: 30px;
@@ -21,16 +22,42 @@
     cursor: pointer;
   }
 
-  .menu-item {
-    display: block;
-    width: 329px;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
+  .search-bar {
+    display: flex;
+    align-items: center;
   }
   
+  .search-icon {
+    margin-right: 10px;
+  }
+  
+  .search-text {
+    font-weight:lighter;
+  }
+  
+
+  .menu-item {
+    display: block;
+    width: 280px;
+    margin: 20px 0;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  /* selects all elements with menu-item but excludes the Search bar */
+  .menu-item:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+  }
+
   .menu-item:first-child {
     border-bottom: none;
-    margin-bottom: 20px;
+    margin-bottom: 30%;
   }
 
   .temperature{
@@ -54,7 +81,7 @@
   }
 
   .sns-icons img {
-    width: 30px;
+    width: 90px;
     margin: 0 5px;
   }
 }

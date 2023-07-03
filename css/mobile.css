@@ -1,5 +1,48 @@
- body {
-  background: #f9de4a;
-  width: 390px; 
-  height: 844px;
+body {
+  background: #f9d851;
 }
+
+@media screen and (max-width: 390px) {
+  body{
+    background: #f9d851;
+  }
+  .mb_main_logo img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+    margin-right: 85px;
+  }
+  .mb_lang img {
+    float: right;
+    margin-top: 30px;
+    width: 20px;
+  }
+  .mb_hamburger_btn img {
+    float: left;
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 20px;
+  }
+  .mb_top_line {
+    height: 70px;
+    border-bottom: 2px solid black;
+  }
+  .mb_main_slider img {
+    margin: 25px auto;
+    display: block;
+    width: 310px;
+  }
+  .mb_box {
+    width: 100%; 
+    background-color: black;
+    height: 110px;
+
+  }
+  .mb_box img{
+    width: 75px;
+    float: left;
+    display: flex;
+    margin-left: 18px;
+    margin-top: 3px;
+  }

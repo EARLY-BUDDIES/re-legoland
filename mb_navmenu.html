@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Buddies Mobile</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LEGOLAND" />
+  <meta property="og:title" content="LEGOLAND Korea" />
+  <meta property="og:description" content="Early Buddies가 새롭게 만들어본 Lego Land" />
+  <meta property="og:image" content="./images/LEGOLAND.jpg" />
+  <meta property="og:url" content="https://LEGOLAND.co.kr" />
+
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="LEGOLAND" />
+  <meta property="twitter:title" content="LEGOLAND Korea" />
+  <meta property="twitter:description" content="Early Buddies가 새롭게 만들어본 LegoLand" />
+  <meta property="twitter:image" content="./images/LEGOLAND.jpg" />
+  <meta property="twitter:url" content="https://LEGOLAND.co.kr" />
+
+  <link rel="icon" href="./favicon.png">
+
+  <!-- favicon -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="./css/mb_navmenu.css">
+  
+  <script src="/js/mb_navmenu.js"></script>
+
+</head>
+<body>
+
+    <div class="top-bar">
+      <button class="language-button"><i class="material-icons">language</i></button>
+      <button class="close-button">X</button>
+    </div>  
+
+    <div class="menu">
+      <div class="menu-item search-bar">
+        <span class="search-icon"><i class="material-icons">search</i></span>
+        <span class="search-text">SEARCH FOR ...</span>
+      </div>
+      <div class="menu-item temperature">
+        <h1 class="celsius">14°</h1>
+        <img src="./images/snow.png" class="weather-icon" alt="weather_icon">
+      </div>
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
+        <ul class="submenu">
+          <li>1일 / 오후+</li>
+          <li>시즌 / 연간</li>
+          <li>EXTRA</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 호텔
+        <ul class="submenu">
+          <li>호텔</li>
+          <li>BASIC OFFER</li>
+          <li>SPECIAL</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">즐길거리
+        <ul class="submenu">
+          <li>테마파크</li>
+          <li>시즌이벤트</li>
+          <li>프로모션</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">이용가이드
+        <ul class="submenu">
+          <li>이용정보</li>
+          <li>편의시설 / 제도</li>
+          <li>고객문의</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="sns-icon">
+      <img src="images/sns-icon.png" alt="SNS Icon">
+    </div>
+
+  
+
+</body>
+</html>

@@ -13,15 +13,6 @@
     margin-bottom: 10px;
   }
 
-  /* .language-button,
-  .close-button {
-    font-size: 16px;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  } */
-
   .language-button,
   .close-button {
     font-size: 16px;
@@ -47,7 +38,7 @@
   .search-bar {
     display: flex;
     align-items: center;
-    font-size: 13px;;
+    font-size: 13px;
   }
   
   .search-icon {

@@ -13,18 +13,41 @@
     margin-bottom: 10px;
   }
 
-  .language-button,
+  /* .language-button,
   .close-button {
     font-size: 16px;
     padding: 5px 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+  } */
+
+  .language-button,
+  .close-button {
+    font-size: 16px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-button i {
+    margin-right: 3px;
   }
 
+  .close-button {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
   .search-bar {
     display: flex;
     align-items: center;
+    font-size: 13px;;
   }
   
   .search-icon {
@@ -42,6 +65,7 @@
     margin: 20px 0;
     padding: 10px 0;
     position: relative;
+    font-size: 18px;
   }
 
   /* selects all elements with menu-item but excludes the Search bar */
@@ -60,13 +84,41 @@
     margin-bottom: 30%;
   }
 
+  .submenu {
+    display: none;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-left: 15px;
+    animation-duration: 0.3s;
+    font-size: 12px;
+  }
+  
+  .submenu li {
+    padding-bottom: 20px;
+  }
+
+  .submenu li:last-child {
+    padding-bottom: 0;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
   .temperature{
     display: flex;
   }
   
   .celsius{
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 70px;
+    /* oh no font-weight isn't working due to font style */
+    /* font-weight: 100; */
     color: black;
   }
   
@@ -81,8 +133,8 @@
   }
 
   .sns-icons img {
-    width: 90px;
-    margin: 0 5px;
+    width: 80px;
+    margin: 10px 5px;
   }
 }
 

@@ -40,13 +40,15 @@
 
   <link rel="stylesheet" href="./css/mb_navmenu.css">
   
+  <script src="/js/mb_navmenu.js"></script>
+
 </head>
 <body>
 
     <div class="top-bar">
-      <button class="language-button">Language</button>
+      <button class="language-button"><i class="material-icons">language</i></button>
       <button class="close-button">X</button>
-    </div>
+    </div>  
 
     <div class="menu">
       <div class="menu-item search-bar">
@@ -57,14 +59,42 @@
         <h1 class="celsius">14°</h1>
         <img src="./images/snow.png" class="weather-icon" alt="weather_icon">
       </div>
-      <div class="menu-item">Legoland 파크호텔</div>
-      <div class="menu-item">LEGOLAND 호텔</div>
-      <div class="menu-item">즐길거리</div>
-      <div class="menu-item">이용가이드</div>
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
+        <ul class="submenu">
+          <li>1일 / 오후+</li>
+          <li>시즌 / 연간</li>
+          <li>EXTRA</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 호텔
+        <ul class="submenu">
+          <li>호텔</li>
+          <li>BASIC OFFER</li>
+          <li>SPECIAL</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">즐길거리
+        <ul class="submenu">
+          <li>테마파크</li>
+          <li>시즌이벤트</li>
+          <li>프로모션</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">이용가이드
+        <ul class="submenu">
+          <li>이용정보</li>
+          <li>편의시설 / 제도</li>
+          <li>고객문의</li>
+        </ul>
+      </div>
+      
     </div>
 
     <div class="sns-icon">
-      <img src="sns-icon.png" alt="SNS Icon">
+      <img src="images/sns-icon.png" alt="SNS Icon">
     </div>
 
   

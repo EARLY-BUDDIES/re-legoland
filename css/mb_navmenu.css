@@ -132,12 +132,11 @@
     width: 30px;
   }
 
-  .sns-icons {
-    text-align: center;
-    margin-top: 20px;
+  .sns-icon {
+    margin-top: 40px;
   }
 
-  .sns-icons img {
+  .sns-icon img {
     width: 80px;
     margin: 10px 5px;
   }

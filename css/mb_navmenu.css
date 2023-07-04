@@ -75,6 +75,10 @@
     margin-bottom: 30%;
   }
 
+  .submenu-open .submenu {
+    display: block;
+  }
+  
   .submenu {
     display: none;
     list-style-type: disc;
@@ -84,11 +88,11 @@
     font-size: 12px;
     list-style-type: none;
   }
-
+  
   .submenu li {
     padding-bottom: 20px;
   }
-
+  
   .submenu li:last-child {
     padding-bottom: 0;
   }
@@ -139,7 +143,14 @@
   }
 }
 
-
+.navmenu-container {
+  position: fixed;
+  top: 0;
+  /* width: 80%; */
+  height: 100vh;
+  z-index: 999;
+  transition: right 1.0s ease; 
+}
 
 @media screen and (min-width: 390px) {
   .menu,

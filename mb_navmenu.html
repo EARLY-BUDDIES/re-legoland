@@ -40,14 +40,15 @@
 
   <link rel="stylesheet" href="./css/mb_navmenu.css">
   
-  <script src="/js/mb_navmenu.js"></script>
+  <script src="./js/mb_navmenu.js"></script>
 
 </head>
 <body>
 
+  <div class="navmenu-container">
     <div class="top-bar">
       <button class="language-button"><i class="material-icons">language</i></button>
-      <button class="close-button">X</button>
+      <button class="close-button" onclick="closeMenu()">X</button>
     </div>  
 
     <div class="menu">
@@ -55,10 +56,14 @@
         <span class="search-icon"><i class="material-icons">search</i></span>
         <span class="search-text">SEARCH FOR ...</span>
       </div>
-      <div class="menu-item temperature">
-        <h1 class="celsius">14°</h1>
-        <img src="./images/snow.png" class="weather-icon" alt="weather_icon">
+
+      <div class="weather">
+        <div class="temperature">
+          <h1 class="celsius">14°</h1>
+          <img class="weather-icon-mobile" src="./images/drizzle.png"  alt="weather_icon">
+        </div>
       </div>
+      
       <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
         <ul class="submenu">
           <li>1일 / 오후+</li>
@@ -103,7 +108,6 @@
       <img src="images/sns-icon.png" alt="SNS Icon">
     </div>
 
-  
-
+  </div>
 </body>
 </html>

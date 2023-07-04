@@ -1,14 +1,21 @@
 function toggleSubmenu(menuItem) {
-  menuItem.classList.toggle('active');
   const submenu = menuItem.querySelector('.submenu');
+  const allSubmenus = document.querySelectorAll('.submenu');
+  const parentMenuItems = document.querySelectorAll('.menu-item');
+
   if (submenu.style.display === 'block') {
-    submenu.style.animation = 'fade-out 0.3s';
-    setTimeout(() => {
-      submenu.style.display = 'none';
-      submenu.style.animation = '';
-    }, 300);
+    submenu.style.display = 'none';
+    menuItem.classList.remove('active');
   } else {
+    // Close all submenus and remove active class from other menu items
+    allSubmenus.forEach((sub) => {
+      sub.style.display = 'none';
+    });
+    parentMenuItems.forEach((parentItem) => {
+      parentItem.classList.remove('active');
+    });
+
     submenu.style.display = 'block';
-    submenu.style.animation = 'fade-in 0.3s';
+    menuItem.classList.add('active');
   }
 }

@@ -77,11 +77,17 @@
       
       <div class="menu-item" onclick="toggleSubmenu(this)">즐길거리
         <ul class="submenu">
-          <li>테마파크</li>
+          <li class="submenu-item" onclick="toggleSubmenu(this)">테마파크
+            <ul class="submenu">
+              <li>어트랙션</li>
+              <li>엔터테인먼트</li>
+            </ul>
+          </li>
           <li>시즌이벤트</li>
           <li>프로모션</li>
         </ul>
-      </div>
+      </div>      
+  
       
       <div class="menu-item" onclick="toggleSubmenu(this)">이용가이드
         <ul class="submenu">

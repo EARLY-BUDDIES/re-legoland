@@ -38,76 +38,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <link rel="stylesheet" href="./css/mb_navmenu.css">
+  <link rel="stylesheet" href="./css/mb_attraction_detail.css">
   
-  <script src="./js/mb_navmenu.js"></script>
 
 </head>
 <body>
 
-  <div class="navmenu-container">
-    <div class="top-bar">
-      <button class="language-button"><i class="material-icons">language</i></button>
-      <button class="close-button" onclick="closeMenu()">X</button>
-    </div>  
-
-    <div class="menu">
-      <div class="menu-item search-bar">
-        <span class="search-icon"><i class="material-icons">search</i></span>
-        <span class="search-text">SEARCH FOR ...</span>
+  <div class="container">
+    <div class="header">
+      <button class="arrow-button"><img src="./images/arrow.png"></button>
+      <i class="material-icons">language</i></button>
+      <div class="hamburger-button">
+        <button><i class="material-icons">menu</i></button>
       </div>
-
-      <div class="weather">
-        <div class="temperature">
-          <h1 class="celsius">14°</h1>
-          <img class="weather-icon-mobile" src="./images/drizzle.png"  alt="weather_icon">
-        </div>
-      </div>
-      
-      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
-        <ul class="submenu">
-          <li>1일 / 오후+</li>
-          <li>시즌 / 연간</li>
-          <li>EXTRA</li>
-        </ul>
-      </div>
-      
-      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 호텔
-        <ul class="submenu">
-          <li>호텔</li>
-          <li>BASIC OFFER</li>
-          <li>SPECIAL</li>
-        </ul>
-      </div>
-      
-      <div class="menu-item" onclick="toggleSubmenu(this)">즐길거리
-        <ul class="submenu">
-          <li class="submenu-item" onclick="toggleSubmenu(this)">테마파크
-            <ul class="submenu">
-              <li>어트랙션</li>
-              <li>엔터테인먼트</li>
-            </ul>
-          </li>
-          <li>시즌이벤트</li>
-          <li>프로모션</li>
-        </ul>
-      </div>      
-  
-      
-      <div class="menu-item" onclick="toggleSubmenu(this)">이용가이드
-        <ul class="submenu">
-          <li>이용정보</li>
-          <li>편의시설 / 제도</li>
-          <li>고객문의</li>
-        </ul>
-      </div>
-      
     </div>
 
-    <div class="sns-icon">
-      <img src="images/sns-icon.png" alt="SNS Icon">
+    <img class="attraction-image" src="./images/DJ’s Dizzy Disco Spin.png">
+    <h1 class="attraction-title">DJ's Dizzy Disco Spin</h1>
+    <div class="attraction-restriction">
+      <span class="restriction-icon"></span>
+      <span class="restriction-icon"></span>
     </div>
-
+    <div class="dotted-line"></div>
+    <div class="description">
+      <p>오른쪽으로 빙글! 왼쪽으로 빙글!</p>
+      <p>DJ가 틀어주는 디스코 음악에 맞춰서</p>
+      <p>빙글빙글 돌아볼까요? ~(^_^)~*</p>
+    </div>
+    <div class="icon">
+      <img src="clock-icon.png" alt="Clock Icon">
+    </div>
+    <span>HOURS</span>
+    <ul>
+      <li>월 ~ 목 14:00 ~ 18:00</li>
+      <li>금 10:00 ~ 16:00</li>
+      <li>토 ~ 일 16:00 ~ 21:00</li>
+    </ul>
+    <div class="icon">
+      <img src="location-icon.png" alt="Location Icon">
+    </div>
+    <span>LOCATION</span>
+    <p>Bricktopia</p>
   </div>
+
+
+
 </body>
 </html>

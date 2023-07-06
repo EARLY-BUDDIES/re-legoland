@@ -127,14 +127,22 @@
   
   /* Dashed line styles */
   .dashed-line {
-    border-top: 3px dashed #000000;
-    margin: 20px 0;
+      margin: 35px 0;
+      height: 2px;
+      background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 10px,
+        black 5px,
+        black 20px
+      )
   }
   
   /* Description styles */
   .description {
     text-align: center;
     margin-bottom: 20px;
+    line-height: 200%;
   }
   
 /* Clock icon and hours section styles */
@@ -152,6 +160,7 @@
 }
 
 .hours-title {
+  color: #D55682;
   font-weight: bold;
 }
 
@@ -159,7 +168,7 @@
   list-style: none;
   margin-top: 10px;
   padding: 0;
-  text-align: center; /* Center the list items */
+  text-align: center; 
 }
 
 .hours-list li {
@@ -181,7 +190,7 @@
 }
 
 .location-title {
-  font-weight: bold;
+  color: #4183D0;
 }
 
 .location-name {

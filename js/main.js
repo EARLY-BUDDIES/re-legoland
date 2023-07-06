@@ -106,7 +106,7 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather() {
   const response = await fetch(apiUrl + `&appid=${apiKey}`);
-  var data = await response.json();
+  const data = await response.json();
 
   document.querySelector(".celsius").innerHTML = Math.round(data.main.temp) + "°";
 

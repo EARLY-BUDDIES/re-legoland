@@ -145,55 +145,54 @@
     line-height: 200%;
   }
   
-/* Clock icon and hours section styles */
-.icon.hours {
+  /* Clock icon and hours section styles */
+  .icon.hours {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
   text-align: center;
-}
+  }
 
-.icon.hours img {
+  .icon.hours img {
   margin-right: 5px;
-}
+  }
 
-.hours-title {
+  .hours-title {
   color: #D55682;
-  font-weight: bold;
-}
+  }
 
-.hours-list {
+  .hours-list {
   list-style: none;
   margin-top: 10px;
   padding: 0;
   text-align: center; 
-}
+  }
 
-.hours-list li {
+  .hours-list li {
   margin-bottom: 5px;
-}
+  }
 
-/* Location icon and location section styles */
-.icon.location {
+  /* Location icon and location section styles */
+  .icon.location {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
   text-align: center;
-}
+  }
 
-.icon.location img {
+  .icon.location img {
   margin-right: 5px;
-}
+  }
 
-.location-title {
+  .location-title {
   color: #4183D0;
-}
+  }
 
-.location-name {
+  .location-name {
   text-align: center;
-}
-}
+  }
+  }

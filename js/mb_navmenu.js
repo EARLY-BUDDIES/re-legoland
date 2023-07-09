@@ -20,22 +20,11 @@ function toggleSubmenu(menuItem) {
   }
 }
 
-function toggleMenu() {
-  var menuContainer = document.querySelector('.navmenu-container');
-  menuContainer.classList.toggle('menu-open');
-}
 
-function closeMenu() {
-  var menuContainer = document.querySelector('.navmenu-container');
-  menuContainer.classList.remove('menu-open');
-  setTimeout(function() {
-    window.location.href = 'mobile.html';
-  }, 200); // Adjust the delay as needed for the slide-out animation
-}
 
 
 // WEATHER
-
+const apiKey = "317d1cdbbcf8d67b187b125a53b7c13e";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
 
 async function checkMobileWeather() {

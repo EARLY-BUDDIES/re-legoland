@@ -145,7 +145,6 @@
 .navmenu-container {
   position: fixed;
   top: 0;
-  /* width: 80%; */
   height: 100vh;
   z-index: 999;
   transition: right 1.0s ease; 

@@ -134,7 +134,7 @@
 
   .sns-icon {
     margin-top: 40px;
-    
+  }
   .sns-icon img {
     width: 80px;
     margin: 10px 5px;
@@ -144,7 +144,6 @@
 .navmenu-container {
   position: fixed;
   top: 0;
-  /* width: 80%; */
   height: 100vh;
   z-index: 999;
   transition: right 1.0s ease; 

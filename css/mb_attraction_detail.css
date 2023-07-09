@@ -11,81 +11,184 @@
     margin: 0;
   }
 
-  /* Container styles */
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
     text-align: center;
-    padding: 20px;
+    margin-top: 20px;
   }
 
   /* Header styles */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+  .mb_main_logo img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+    margin-right: 85px;
+  }
+  .mb_lang img {
+    float: right;
+    margin-top: 30px;
+    width: 20px;
+  }
+  .mb_hamburger_btn img {
+    float: left;
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 20px;
+  }
+  .mb_top_line {
+    height: 70px;
+    border-bottom: 2px solid black;
   }
 
   /* Attraction image styles */
   .attraction-image {
     width: 100%;
     max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
   }
 
-  .hamburger-button button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
+/* Attraction title container styles */
+.attraction-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Attraction title styles */
+.attraction-title {
+  font-size: 24px;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  padding: 30px;
+  width: 100%;
+  height: 84px;
+  text-align: center;
+  line-height: 1; 
+}
   
-  /* Attraction title styles */
-  .attraction-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+/* Attraction info styles */
+.attraction-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Attraction info styles */
+.attraction-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Attraction info item styles */
+.attraction-info-item {
+  margin-bottom: 10px;
+}
+
+.attraction-info-item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.attraction-info-item span img {
+  margin-right: 5px;
+}
+
+/* Attraction restriction styles */
+.attraction-restriction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Add additional spacing on top and bottom */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
   
-  /* Attraction restriction styles */
-  .attraction-restriction {
-    margin-bottom: 10px;
-  }
-  
-  /* Restriction icon styles */
-  .restriction-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    margin-right: 5px;
-    border-radius: 50%;
-  }
-  
-  /* Dotted line styles */
-  .dotted-line {
-    border-top: 3px dotted #000000;
-    margin: 20px 0;
+  /* Dashed line styles */
+  .dashed-line {
+      margin: 35px 0;
+      height: 2px;
+      background: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 10px,
+        black 5px,
+        black 20px
+      )
   }
   
   /* Description styles */
   .description {
     text-align: center;
     margin-bottom: 20px;
+    line-height: 200%;
   }
   
-  /* Icon styles */
-  .icon {
-    display: inline-block;
-    margin-right: 5px;
+  /* Clock icon and hours section styles */
+  .icon.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
   }
-  
-  /* Bottom section styles */
-  .bottom-section {
-    text-align: center;
-    margin-top: 20px;
+
+  .icon.hours img {
+  margin-right: 5px;
   }
-}
+
+  .hours-title {
+  color: #D55682;
+  }
+
+  .hours-list {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  text-align: center; 
+  }
+
+  .hours-list li {
+  margin-bottom: 5px;
+  }
+
+  /* Location icon and location section styles */
+  .icon.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+  }
+
+  .icon.location img {
+  margin-right: 5px;
+  }
+
+  .location-title {
+  color: #4183D0;
+  }
+
+  .location-name {
+  text-align: center;
+  }
+  }

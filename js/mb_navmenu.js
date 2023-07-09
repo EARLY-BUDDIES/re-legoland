@@ -20,15 +20,42 @@ function toggleSubmenu(menuItem) {
   }
 }
 
-function toggleMenu() {
-  var menuContainer = document.querySelector('.navmenu-container');
-  menuContainer.classList.toggle('menu-open');
+
+
+
+// WEATHER
+
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
+
+async function checkMobileWeather() {
+  try {
+    const mobileResponse = await fetch(apiUrl + `&appid=${apiKey}`);
+    const mobileData = await mobileResponse.json();
+
+    const mobileWeatherIcon = document.querySelector(".weather-icon-mb");
+  
+    document.querySelector(".celsius").innerHTML = Math.round(mobileData.main.temp) + "°";
+
+    if (mobileData.weather[0].main == "Clouds") {
+      mobileWeatherIcon.src = "images/clouds.png";
+    } else if (mobileData.weather[0].main == "Clear") {
+      mobileWeatherIcon.src = "images/clear.png";
+    } else if (mobileData.weather[0].main == "Rain") {
+      mobileWeatherIcon.src = "images/rain.png";
+    } else if (mobileData.weather[0].main == "Drizzle") {
+      mobileWeatherIcon.src = "images/drizzle.png";
+    } else if (mobileData.weather[0].main == "Snow") {
+      mobileWeatherIcon.src = "images/snow.png";
+    } else if (mobileData.weather[0].main == "Wind") {
+      mobileWeatherIcon.src = "images/wind.png";
+    }
+  } 
+  catch (error) {
+    console.error("An error occurred while fetching weather data:", error);
+  }
 }
 
-function closeMenu() {
-  var menuContainer = document.querySelector('.navmenu-container');
-  menuContainer.classList.remove('menu-open');
-  setTimeout(function() {
-    window.location.href = 'mobile.html';
-  }, 200); // Adjust the delay as needed for the slide-out animation
-}
+checkMobileWeather();
+
+
+

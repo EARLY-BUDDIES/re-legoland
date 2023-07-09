@@ -1,0 +1,91 @@
+@media screen and (max-width: 389px) and (max-height: 816px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'JalnanOTF', sans-serif;
+    background-color: #F8D950;
+    margin: 0;
+  }
+
+  /* Container styles */
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  /* Attraction image styles */
+  .attraction-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .hamburger-button button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Attraction title styles */
+  .attraction-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Attraction restriction styles */
+  .attraction-restriction {
+    margin-bottom: 10px;
+  }
+  
+  /* Restriction icon styles */
+  .restriction-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  /* Dotted line styles */
+  .dotted-line {
+    border-top: 3px dotted #000000;
+    margin: 20px 0;
+  }
+  
+  /* Description styles */
+  .description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Icon styles */
+  .icon {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  /* Bottom section styles */
+  .bottom-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

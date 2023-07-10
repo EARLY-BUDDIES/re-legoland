@@ -2,8 +2,8 @@
   body {
     font-family: 'JalnanOTF', sans-serif;
     background-color: #F8D950;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10%;
+    margin-right: 15%;
     /* transition: transform 0.3s ease;
     transform-origin: left center; */
   }
@@ -57,17 +57,16 @@
   }
   
   .search-text {
-    font-weight:lighter;
+    font-size: 17px;
   }
   
-
   .menu-item {
     display: block;
     width: 280px;
     margin: 20px 0;
     padding: 10px 0;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   /* selects all elements with menu-item but excludes the Search bar */
@@ -75,15 +74,25 @@
     content: "";
     position: absolute;
     bottom: -10px; 
-    left: 0;
-    right: 0;
-    height: 1px;
+    left: 0px;
+    right: -10px;
+    height: 2px;
     background-color: black;
   }
 
+  .menu-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  right: -10px;
+  height: 2px;
+  background-color: black;
+}
+
   .menu-item:first-child {
     border-bottom: none;
-    margin-bottom: 30%;
+    margin-bottom: 50%;
   }
 
   .submenu-open .submenu {
@@ -131,6 +140,8 @@
   
   .temperature{
     display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
   }
   
   .celsius{

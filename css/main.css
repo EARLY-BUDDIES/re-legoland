@@ -51,11 +51,24 @@ header {
     background: #b22520;
 }
 
+.sliderContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #b22520;
+  height: 45vh; 
+}
+
 .slider_box {
   width: 600px;
   height: 410px;
-  margin-left: 280px;
-  /* background: #b22520; */
+}
+
+.reservation {
+  background-color: #2B2A27;
+  width: 330px;
+  height: 250px;
+  position: relative; 
 }
 
 .inner {
@@ -105,16 +118,6 @@ header {
 }
 
 /* RESERVATION */
-
-.reservation {
-    position: absolute;
-    background-color: #2B2A27;
-    top: 42%;
-    right: 250px;
-    z-index: 3;
-    width: 330px;
-    height: 250px;
-  }
   
   .quickTab {
     width: 330px;
@@ -217,7 +220,7 @@ header {
     pointer-events: none;
   }
   
-  .buyNow{
+  .buyNow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,9 +231,9 @@ header {
     background-color: #FEE50F;
     border-radius: 10px;
     position: absolute;
-    top: 100%;
+    bottom: -50%; /* reservation 섹션의 아래 50%에 위치하도록 설정 */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%); /* 아래로 50% 이동하여 가운데 정렬 */
     cursor: pointer;
   }
 

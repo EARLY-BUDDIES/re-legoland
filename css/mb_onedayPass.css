@@ -12,13 +12,6 @@
   }
 
   /* Header styles */
-  .mb_main_logo img {
-    float: left;
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 200px;
-    margin-right: 85px;
-  }
   
   .mb_lang img {
     float: right;
@@ -34,8 +27,14 @@
   }
   
   .mb_top_line {
-    height: 70px;
+    height: 72px;
     border-bottom: 2px solid black;
+  }
+
+  i {
+    font-size: 25px;
+    margin: 27px 263px 0 20px;
+    float: left;
   }
 
   .image-container {

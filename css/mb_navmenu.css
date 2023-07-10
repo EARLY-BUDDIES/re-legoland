@@ -12,6 +12,11 @@
     transform: translateX(100%);
   } */
 
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
   .top-bar {
     display: flex;
     justify-content: flex-end;

@@ -7,6 +7,11 @@ body {
       background: #f9d851;
       font-family: 'Jalnan';
     }
+    a {
+      text-decoration: none;
+      color: none;
+      color: inherit;
+    }
     .mb_lang img {
       float: right;
       margin-top: 28px;

@@ -309,4 +309,32 @@ body {
   }
 }
 
-  
+
+@media screen and (min-width: 391px) {
+  .mb_top_line,
+  .mb_main_slider,
+  .mb_box,
+  .promotion_title,
+  .promotion_box1,
+  .promotion_box2,
+  .themepark1,
+  .themepark_box,
+  .themepark2,
+  .themepark_box2,
+  .entertainment_title,
+  .entertainment,
+  .entertainment_box1,
+  .entertainment_box2,
+  .entertainment_box3,
+  .sns_title,
+  .sns_box,
+  .sns_subtitle,
+  .sns_img,
+  .sns_comment,
+  .footer_box,
+  .footer,
+  .footer_copyright {
+    display: none;
+  }
+}
+

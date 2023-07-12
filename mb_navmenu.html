@@ -39,18 +39,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link rel="stylesheet" href="./css/mb_navmenu.css">
-  
+
   <script src="./js/mb_navmenu.js"></script>
 
 </head>
 <body>
 
   <div class="navmenu-container">
-    <div class="top-bar">
-      <button class="language-button"><i class="material-icons">language</i></button>
-      <button class="close-button" onclick="closeNavMenu()">X</button>
+    <div class="mb_top_line">
+        <div>
+          <img src="images/mb_lang.png" alt="...">
+        </div>
+        <div>
+          <img class="close-button" onclick="closeNavMenu()" src="images/mb_xbtn.png" alt="...">
+        </div>
     </div>  
-
+    
     <div class="menu">
       <div class="menu-item search-bar">
         <span class="search-icon"><i class="material-icons">search</i></span>
@@ -66,7 +70,7 @@
       
       <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
         <ul class="submenu">
-          <li>1일 / 오후+</li>
+          <a href="./mb_onedayPass.html"><li>1일 / 오후+</a></li>
           <li>시즌 / 연간</li>
           <li>EXTRA</li>
         </ul>

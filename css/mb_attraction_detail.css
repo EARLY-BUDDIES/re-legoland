@@ -1,4 +1,8 @@
-@media screen and (max-width: 389px) and (max-height: 816px) {
+body {
+  background: #f9d851;
+}
+
+@media screen and (max-width: 390px) {
   * {
     margin: 0;
     padding: 0;
@@ -222,3 +226,22 @@
     width: 70px;
     margin: 0 0 30px 0;
   }
+
+@media screen and (min-width: 391px) {
+  .main,
+  .main_img img,
+  .mb_main_logo,
+  .mb_hamburger_btn,
+  .fa-solid,
+  .attraction-image,
+  .attraction-title,
+  .attraction-info,
+  .attraction-restriction,
+  .description,
+  .icon,
+  .hours-list,
+  .location-name,
+  .footer_box {
+    display: none;
+  }
+}  

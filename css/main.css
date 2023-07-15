@@ -1,3 +1,7 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 header {
     background: #f9de4a;
 }
@@ -60,6 +64,7 @@ header {
 }
 
 .slider_box {
+  margin-right: 30px;
   width: 600px;
   height: 410px;
 }
@@ -227,7 +232,6 @@ header {
     width: 150px;
     height: 55px;
     font-size: 25px;
-    font-weight: 900;
     background-color: #FEE50F;
     border-radius: 10px;
     position: absolute;
@@ -235,6 +239,7 @@ header {
     left: 50%;
     transform: translate(-50%, 50%); /* 아래로 50% 이동하여 가운데 정렬 */
     cursor: pointer;
+    font-family: 'Jalnan';
   }
 
 /* promotion */
@@ -622,8 +627,8 @@ padding-bottom: 3%;
   display: inline-block;
   justify-content: center;
   align-items: center;
-  width: 3px;
-  height: 90px;
+  width: 1.8px;
+  height: 60px;
   background-color: #DBDBDB;
   margin-left: 1%;
 }
@@ -646,7 +651,7 @@ padding-bottom: 3%;
 }
 
 .openingHours{
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .openingHours > div:first-child {
@@ -663,22 +668,24 @@ padding-bottom: 3%;
 
 .weather button{
   background-color: white;
-  border-radius: 3px;
+  border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .parkInfo{
-  margin: 0 1% 0 2%;
+  margin: 0 1% 0 2.5%;
   width: 235px;
   height: 60px;
   font-size: 20px;
+  border: 1px solid rgb(110, 110, 110);
 }
 
 .ticketSearch{
   width: 235px;
   height: 60px;
   font-size: 20px;
+  border: 1px solid rgb(110, 110, 110);
 }
 
 /* FOOTER */

@@ -149,14 +149,6 @@ body {
   }
 }
 
-.navmenu-container {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  right: 0;
-  transition: all .5s ease-out;
-}
-
 @media screen and (min-width: 391px) {
   .navmenu-container,
   .menu,

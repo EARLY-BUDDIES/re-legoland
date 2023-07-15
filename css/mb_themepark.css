@@ -12,6 +12,9 @@ body {
       color: none;
       color: inherit;
     }
+    #screen-size-message {
+      display: none;
+    }
     .mb_lang img {
       float: right;
       margin-top: 28px;
@@ -96,6 +99,13 @@ body {
       #columns,
       .footer_box {
         display: none;
+      }
+      #screen-size-message {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: #FF5252;
+        margin-top: 20px;
       }
     }
   

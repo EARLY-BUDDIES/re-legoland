@@ -26,6 +26,10 @@ body {
     margin-top: 20px;
   }
 
+  #screen-size-message {
+    display: none;
+  }
+
   /* Header styles */
 
   .mb_lang img {
@@ -243,5 +247,12 @@ body {
   .location-name,
   .footer_box {
     display: none;
+  }
+  #screen-size-message {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #FF5252;
+    margin-top: 20px;
   }
 }  

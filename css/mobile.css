@@ -2,10 +2,15 @@ body {
   background: #f9d851;
 }
 
+/* Mobile styles */
 @media screen and (max-width: 390px) {
   body{
     background: #f9d851;
     font-family: 'Noto Sans KR', sans-serif;
+    }
+
+  #screen-size-message {
+    display: none;
   }
 
   .mb_main_logo img {
@@ -309,7 +314,7 @@ body {
   }
 }
 
-
+  /* Desktop styles */
 @media screen and (min-width: 391px) {
   .mb_top_line,
   .mb_main_slider,
@@ -336,5 +341,11 @@ body {
   .footer_copyright {
     display: none;
   }
+  #screen-size-message {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #FF5252;
+    margin-top: 20px;
+  }
 }
-

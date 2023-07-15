@@ -100,11 +100,12 @@ header {
     float: left;
     background: none;
     border: none;
+    margin-left: 10px;
     margin-top: -190px;
 }
 
 .slider_btn1 img {
-    width: 50px;
+    width: 48px;
     opacity: 50%;
 }
 
@@ -114,13 +115,14 @@ header {
 
 .slider_btn2 {
     margin-top: -190px;
+    margin-right: 10px;
     float: right;
     background: none;
     border: none;
 }
 
 .slider_btn2 img {
-    width: 50px;
+    width: 48px;
 }
 
 /* RESERVATION */
@@ -357,6 +359,7 @@ padding-bottom: 3%;
 
 
 .guide {
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,10 +368,9 @@ padding-bottom: 3%;
 }
 
 .guide img {
+    margin: 13px 7px 0 0;
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    margin-right: 5px;
+    width: 40px;
 }
 
 .guide a{
@@ -384,11 +386,12 @@ padding-bottom: 3%;
 
 .guide1 {
     float: left;
-    margin-left: 45px;
+    margin-left: 47px;
+    margin-top: 15px;
 }
 
 .guide1 a:last-child {
-    margin-left: 92px;
+    margin-left: 87px;
 }
 
 .guide2 {
@@ -397,7 +400,7 @@ padding-bottom: 3%;
 }
 
 .guide2 a:last-child {
-    margin-left: 73px;
+    margin-left: 65px;
 }
 
 .guide3 {
@@ -568,9 +571,9 @@ padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px;
+  height: 150px;
   box-sizing: border-box; 
-  background: #f4f4f4;
+  background: #f5f5f5;
   padding: 0;
 }
 

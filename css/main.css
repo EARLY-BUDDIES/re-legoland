@@ -1,3 +1,7 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 header {
     background: #f9de4a;
 }
@@ -60,12 +64,14 @@ header {
 }
 
 .slider_box {
+  margin-right: 30px;
   width: 600px;
   height: 410px;
 }
 
 .reservation {
   background-color: #2B2A27;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.321);
   width: 330px;
   height: 250px;
   position: relative; 
@@ -191,51 +197,6 @@ header {
     display: flex;
   }
   
-  .valueBtn{
-    height: 40px;
-    width: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f4f4f4;
-    border-radius: 5px;
-    margin: 2% 0 0 10%;
-  }
-  
-  .valueBtn:nth-child(2){
-    margin-left: 2px;
-  }
-  
-  .valueBtn span{
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .valueBtn span.num{
-    font-size: 15px;
-    border-right: 2px solid rgba(0, 0, 0, 0.2);
-    border-left: 2px solid rgba(0, 0, 0, 0.2);
-    pointer-events: none;
-  }
-  
-  .buyNow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 55px;
-    font-size: 25px;
-    font-weight: 900;
-    background-color: #FEE50F;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -50%; /* reservation 섹션의 아래 50%에 위치하도록 설정 */
-    left: 50%;
-    transform: translate(-50%, 50%); /* 아래로 50% 이동하여 가운데 정렬 */
-    cursor: pointer;
-  }
 
 /* promotion */
 
@@ -594,15 +555,16 @@ padding-bottom: 3%;
   align-items: center;
   width: 150px;
   height: 55px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 900;
   background-color: #FEE50F;
   border-radius: 10px;
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -58%);
   cursor: pointer;
+  font-family: 'Jalnan';
 }
 
 /* WEATHER */
@@ -622,8 +584,8 @@ padding-bottom: 3%;
   display: inline-block;
   justify-content: center;
   align-items: center;
-  width: 3px;
-  height: 90px;
+  width: 1.8px;
+  height: 60px;
   background-color: #DBDBDB;
   margin-left: 1%;
 }
@@ -633,52 +595,57 @@ padding-bottom: 3%;
 }
 
 .celsius{
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 900;
   color: black;
-  margin-right: 2%;
+  margin-right: 10%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .weather img{
-  height: 50px;
-  width: 50px;
-  padding-right: 20px;
+  height: 55px;
+  width: 55px;
+  padding-right: 40px;
 }
 
 .openingHours{
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .openingHours > div:first-child {
   padding-bottom: 2%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 5px;
   text-align: left;
 }
 
 .openingHours > div:last-child {
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 800;
 } 
 
 .weather button{
   background-color: white;
-  border-radius: 3px;
+  border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .parkInfo{
-  margin: 0 1% 0 2%;
+  margin: 0 1% 0 2.5%;
   width: 235px;
   height: 60px;
-  font-size: 20px;
+  font-size: 18px;
+  border: 1px solid rgb(110, 110, 110);
 }
 
 .ticketSearch{
   width: 235px;
   height: 60px;
-  font-size: 20px;
+  font-size: 18px;
+  border: 1px solid rgb(110, 110, 110);
 }
 
 /* FOOTER */

@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: end;
     height: 70px;
+    transform: translate(19%, 16%);
   }
 
   .search-bar {

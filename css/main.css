@@ -30,8 +30,8 @@ header {
 }
 
 .nav-bar {
-  background: #f9de4a;
-  padding: 30px 335px 20px;
+  background: #ffdb26;
+  padding: 30px 250px 20px;
   text-align: center;
 }
 
@@ -327,7 +327,7 @@ padding-bottom: 3%;
 .img-slider{
   margin-top: 50px;
   position: relative;
-  width: 930px;
+  width: 900px;
   height: 350px;
 }
 .img-slider .slide{

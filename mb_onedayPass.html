@@ -40,13 +40,21 @@
 
   <link rel="stylesheet" href="./css/mb_onedayPass.css">
 
-  <script
-  src="https://kit.fontawesome.com/ed3cd54472.js"
-  crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/ed3cd54472.js"crossorigin="anonymous"></script>
+  
+ 
+  <script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var currentYearElement = document.getElementById('current-year');
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = '©' + currentYear + ' The LEGO Group. All rights reserved.';
+  });
+  </script>
 
 </head>
 <body>
+
+  <div id="screen-size-message">Oops! Your screen size is too big. Make it smaller for the best experience!</div>
 
   <div class="mb_top_line">
     <div class="mb_main_logo"><a href="./mobile.html"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></a>
@@ -117,9 +125,9 @@
     </div>
     <div class="footer_copyright">
       <div><img src="images/mb_footer.png" alt="..." /></div>
-      <span>©2020 The LEGO Group. All rights reserved.</span>
+      <span id="current-year"></span>
     </div>
-    </div>
+  </div>
     
 
 </body>

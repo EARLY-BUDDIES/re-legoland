@@ -40,14 +40,22 @@
 
   <link rel="stylesheet" href="./css/mb_attraction_detail.css">
 
-  <script
-  src="https://kit.fontawesome.com/ed3cd54472.js"
-  crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/ed3cd54472.js"crossorigin="anonymous"></script>
+  
+ 
+  <script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var currentYearElement = document.getElementById('current-year');
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = '©' + currentYear + ' The LEGO Group. All rights reserved.';
+  });
+  </script>
   
 
 </head>
 <body>
+
+  <div id="screen-size-message">Oops! Your screen size is too big. Make it smaller for the best experience!</div>
 
     <div class="mb_top_line">
 
@@ -112,20 +120,20 @@
 
     <!-- footer -->
 
-  <div class="footer_box">
-    <div class="footer">
-      <span>POLICY</span>
-    </div>
-    <div class="footer">
-      <span>TERMS & CONDITIONS</span>
-    </div>
-    <div class="footer">
-      <span>OUR COMPANY</span>
-    </div>
-    <div class="footer_copyright">
-      <div><img src="images/mb_footer.png" alt="..." /></div>
-      <span>©2020 The LEGO Group. All rights reserved.</span>
-    </div>
+    <div class="footer_box">
+      <div class="footer">
+        <span>POLICY</span>
+      </div>
+      <div class="footer">
+        <span>TERMS & CONDITIONS</span>
+      </div>
+      <div class="footer">
+        <span>OUR COMPANY</span>
+      </div>
+      <div class="footer_copyright">
+        <div><img src="images/mb_footer.png" alt="..." /></div>
+        <span id="current-year"></span>
+      </div>
     </div>
 
 

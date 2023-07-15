@@ -11,6 +11,9 @@ body {
     text-decoration: none;
     color: inherit;
   }
+  #screen-size-message {
+    display: none;
+  }
   .mb_lang img {
     float: right;
     margin-top: 30px;
@@ -214,4 +217,23 @@ body {
     width: 70px;
     margin: 0 0 30px 0;
   }
-}  
+}
+  @media screen and (min-width: 391px) {
+    .main,
+    .main_img img,
+    .mb_main_logo,
+    .mb_hamburger_btn,
+    .fa-solid,
+    .content,
+    .range,
+    .footer_box {
+      display: none;
+    }
+    #screen-size-message {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #FF5252;
+      margin-top: 20px;
+    }
+  }

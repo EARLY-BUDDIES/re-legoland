@@ -42,6 +42,14 @@
 
   <link rel="stylesheet" href="./css/mobile.css">
   
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+  var currentYearElement = document.getElementById('current-year');
+  var currentYear = new Date().getFullYear();
+  currentYearElement.textContent = '©' + currentYear + ' The LEGO Group. All rights reserved.';
+  });
+  </script>
+
 </head>
 
 <body>
@@ -56,6 +64,8 @@
         </div>
       </div>
   </div>
+
+  <div id="screen-size-message">Oops! Your screen size is too big. Make it smaller for the best experience!</div>
 
   <!-- slider -->
   <div class="mb_main_slider"><img src="images/mb_pinklego_slide.png" alt="slide_img"></div>
@@ -163,19 +173,19 @@
 <!-- footer -->
 
 <div class="footer_box">
-<div class="footer">
-  <span>POLICY</span>
-</div>
-<div class="footer">
-  <span>TERMS & CONDITIONS</span>
-</div>
-<div class="footer">
-  <span>OUR COMPANY</span>
-</div>
-<div class="footer_copyright">
-  <div><img src="images/mb_footer.png" alt="..." /></div>
-  <span>©2020 The LEGO Group. All rights reserved.</span>
-</div>
+  <div class="footer">
+    <span>POLICY</span>
+  </div>
+  <div class="footer">
+    <span>TERMS & CONDITIONS</span>
+  </div>
+  <div class="footer">
+    <span>OUR COMPANY</span>
+  </div>
+  <div class="footer_copyright">
+    <div><img src="images/mb_footer.png" alt="..." /></div>
+    <span id="current-year"></span>
+  </div>
 </div>
   
 

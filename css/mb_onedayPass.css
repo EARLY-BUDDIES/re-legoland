@@ -1,4 +1,8 @@
-@media screen and (max-width: 389px) and (max-height: 816px) {
+body {
+  background: #f9d851;
+}
+
+@media screen and (max-width: 390px) {
   * {
     margin: 0;
     padding: 0;
@@ -10,6 +14,11 @@
     background-color: #F8D950;
     margin: 0;
   }
+
+  #screen-size-message {
+    display: none;
+  }
+
 
   /* Header styles */
   
@@ -139,4 +148,22 @@
       width: 70px;
       margin: 0 0 30px 0;
     }
+}
+@media screen and (min-width: 391px) {
+  .main,
+  .main_img img,
+  .mb_main_logo,
+  .mb_hamburger_btn,
+  .image-container,
+  .fa-solid,
+  .footer_box {
+    display: none;
+  }
+  #screen-size-message {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #FF5252;
+    margin-top: 20px;
+  }
 }

@@ -67,3 +67,7 @@ function closeNavMenu() {
   }, 100);
 }
 
+function closeNavMenu() {
+  const navmenu = document.getElementById('navmenu');
+  navmenu.classList.remove('show-navmenu');
+}

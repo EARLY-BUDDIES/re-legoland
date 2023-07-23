@@ -2,14 +2,27 @@ body {
   background: #f9d851;
 }
 
-/* Mobile styles */
-@media screen and (max-width: 390px) {
-  body{
-    background: #f9d851;
-    font-family: 'Noto Sans KR', sans-serif;
+  /* Mobile styles */
+  @media screen and (max-width: 390px) {
+    body{
+      background: #f9d851;
+      font-family: 'Noto Sans KR', sans-serif;
+      }
+
+    #screen-size-message {
+      display: none;
     }
 
-  #screen-size-message {
+  .navmenu-page-container {
+    display: none;
+  }
+
+  .show-navmenu {
+    display: block;
+  }
+
+  /* Hide the main content when the navigation menu is shown */
+  .show-navmenu ~ #main-page-container {
     display: none;
   }
 

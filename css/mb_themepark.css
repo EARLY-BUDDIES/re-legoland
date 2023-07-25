@@ -15,6 +15,14 @@ body {
     #screen-size-message {
       display: none;
     }
+
+    .mb_main_logo img {
+      float: left;
+      margin: 13px 0 0 18px;
+      width: 78px;
+      margin-right: 207px;
+    }
+
     .mb_lang img {
       float: right;
       margin-top: 28px;
@@ -90,6 +98,7 @@ body {
       width: 70px;
       margin: 0 0 30px 0;
     }
+
   }
     @media screen and (min-width: 391px) {
       .main,

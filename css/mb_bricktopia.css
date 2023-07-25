@@ -4,7 +4,8 @@ body {
 
 @media screen and (max-width: 390px) {
   body{
-    background: #f9d851;
+    /* background: #f9d851; */
+    background-color:  #7D7D7D;
     font-family: 'Jalnan';
   }
   a {
@@ -32,7 +33,7 @@ body {
 
   i {
     font-size: 25px;
-    margin: 27px 263px 0 20px;
+    margin: 27px 259.5px 0 23px;
     float: left;
   }
 
@@ -159,22 +160,21 @@ body {
   }
 
 .content {
-   /* height: 150px; */
    font-size: 13px;
 }
 
 .content img{
   background-color: #f9d851;
-  font-size: 13px;
+  font-size: 12px;
   float: left;
-  height: 123px;
+  height: 121px;
   margin-right: 25px;
   width: 105px;
   border-right: 2px solid black;
 }
 
 .content_text {
-  padding: 28px 0 20px 0;
+  padding: 26px 0 20px 0;
   text-decoration-line: none;
   border-bottom: 2px solid black;
   background-color: #f9d851;
@@ -182,12 +182,15 @@ body {
 }
 
 .content_title {
-  font-size: 17px;
-  margin-bottom: 15px;
+  font-size: 14px;
+  margin-bottom: 14px;
 }
 
 .content_subtitle {
-  color: #4E4E4E;
+  color: #3a3a3a;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 12.5px;
 }
 
 

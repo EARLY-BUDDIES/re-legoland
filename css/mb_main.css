@@ -391,6 +391,7 @@ body {
 
   /* Desktop styles */
 @media screen and (min-width: 391px) {
+  .navmenu-page-container img,
   .mb_top_line,
   .mb_main_slider,
   .mb_box,

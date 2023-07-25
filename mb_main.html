@@ -43,6 +43,8 @@
   <link rel="stylesheet" href="./css/mb_main.css">
   <link rel="stylesheet" href="./css/mb_navmenu.css">
   
+  <script src="./js/mb_navmenu.js"></script>
+  
   <script>
     window.addEventListener('DOMContentLoaded', function() {
       var currentYearElement = document.getElementById('current-year');
@@ -58,8 +60,6 @@
       });
     });
   </script>
-
-  <script src="./js/mb_navmenu.js"></script>
 
 </head>
 
@@ -78,7 +78,7 @@
     <div class="menu">
       <div class="menu-item search-bar">
         <span class="search-icon"><i class="material-icons">search</i></span>
-        <span class="search-text">SEARCH FOR ...</span>
+          <input class="search-text" id="searchInput"type="text" name="" placeholder="SEARCH FOR ..."></input>
       </div>
 
       <div class="weather">

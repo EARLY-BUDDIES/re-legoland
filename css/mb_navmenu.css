@@ -3,30 +3,37 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-  body {
+  .navmenu-page-container {
     font-family: 'JalnanOTF', sans-serif;
     background-color: #F8D950;
     margin-left: 10%;
     margin-right: 15%;
   }
-
+  
   a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
 
-#screen-size-message {
-  display: none;
-}
+  #screen-size-message {
+    display: none;
+  }
 
-  .mb_top_line img {
+  .nav_top_line img {
     margin-top: 20px;
     width: 20px;
     cursor: pointer;
     margin-right: 20px;
   }
 
-  .mb_top_line {
+  .nav_top_line img {
+    margin-top: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .nav_top_line {
     display: flex;
     justify-content: end;
     height: 70px;
@@ -46,7 +53,25 @@ body {
   .search-text {
     font-size: 17px;
   }
+
+  #searchInput {
+    font-family: 'JalnanOTF', sans-serif;
+    border: none;
+    background-color: #f9d851;
+    outline: none;
+    padding: 0;
+    line-height: 40px;
+    width: 150px;
+  }
+
+  #searchInput::placeholder {
+    color: black;
+  }
   
+  #searchInput:focus {
+    outline: none;
+  }
+
   .menu-item {
     display: block;
     width: 280px;
@@ -54,6 +79,7 @@ body {
     padding: 10px 0;
     position: relative;
     font-size: 20px;
+    cursor: pointer;
   }
 
   /* selects all elements with menu-item but excludes the Search bar */

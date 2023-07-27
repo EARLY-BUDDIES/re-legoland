@@ -29,9 +29,43 @@ body {
   #screen-size-message {
     display: none;
   }
+  .navmenu-page-container {
+    display: none;
+  }
+
+  .show-navmenu {
+    display: block;
+  }
+
+  /* Hide the main content when the navigation menu is shown */
+  .show-navmenu ~ #main-page-container {
+    display: none;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add margin to create some space between the icon and the input */
+  .material-icons {
+    margin-right: 5px;
+  }
+  
+  /* Adjust the flex properties of the search text to stay on the same row */
+  .search-text {
+    margin-top: 18px;
+  }
 
   /* Header styles */
-
+  
+  .mb_main_logo img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+    margin-right: 85px;
+  }
   .mb_lang img {
     float: right;
     margin-top: 30px;
@@ -44,7 +78,7 @@ body {
     width: 20px;
   }
   .mb_top_line {
-    height: 72px;
+    height: 70px;
     border-bottom: 2px solid black;
   }
 
@@ -53,6 +87,8 @@ body {
     margin: 27px 263px 0 20px;
     float: left;
   }
+
+
 
   /* Attraction image styles */
   .attraction-image {
@@ -236,6 +272,7 @@ body {
   .main_img img,
   .mb_main_logo,
   .mb_hamburger_btn,
+  .nav_top_line img,
   .fa-solid,
   .attraction-image,
   .attraction-title,

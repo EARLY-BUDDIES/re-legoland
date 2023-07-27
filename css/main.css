@@ -6,6 +6,21 @@ header {
     background: #f9de4a;
 }
 
+#floatingIconContainer {
+  position: fixed;
+  top: 50%;
+  left: 10%; /* Position the floating image to the left 10% of the screen */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+/* Add styles for the floating icon */
+#floatingIcon {
+  width: 150px;
+  height: 150px;
+}
+
 .top-line {
   text-align: right;
   background: #000;

@@ -8,8 +8,8 @@ header {
 
 #floatingIconContainer {
   position: fixed;
-  top: 50%;
-  right: 2%; /* Position the floating image to the left 10% of the screen */
+  top: 19%;
+  right: 0%; /* Position the floating image to the left 10% of the screen */
   transform: translate(-50%, -50%);
   z-index: 9999;
   cursor: pointer;

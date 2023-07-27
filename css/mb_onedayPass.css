@@ -32,6 +32,21 @@ body {
     display: none;
   }
 
+  .menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add margin to create some space between the icon and the input */
+  .material-icons {
+    margin-right: 5px;
+  }
+  
+  /* Adjust the flex properties of the search text to stay on the same row */
+  .search-text {
+    margin-top: 18px;
+  }
+
   /* Header styles */
   
   .mb_main_logo img {

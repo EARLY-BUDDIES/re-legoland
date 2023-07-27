@@ -15,6 +15,7 @@ body {
     #screen-size-message {
       display: none;
     }
+
     .navmenu-page-container {
       display: none;
     }
@@ -46,10 +47,10 @@ body {
 
   .mb_main_logo img {
     float: left;
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 200px;
-    margin-right: 85px;
+    margin: 13px 0 0 18px;
+    width: 78px;
+    margin-right: 207px;
+    cursor: pointer;
   }
   .mb_lang img {
     float: right;
@@ -61,6 +62,7 @@ body {
     margin-top: 30px;
     margin-right: 15px;
     width: 20px;
+    cursor: pointer;
   }
     .mb_top_line {
       background-color:  #6B6B6B;
@@ -126,6 +128,7 @@ body {
       width: 70px;
       margin: 0 0 30px 0;
     }
+
   }
     @media screen and (min-width: 391px) {
       .main,

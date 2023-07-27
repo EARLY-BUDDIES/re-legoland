@@ -22,10 +22,9 @@ header {
 }
 
 .top-line {
-  background: #000;
-  padding-top: 10px;
-  padding-right: 335px;
   text-align: right;
+  background: #000;
+  padding: 10px 307px 0 0;
   height: 25px;
   font-size: 14px;
   font-weight: 600;
@@ -37,32 +36,38 @@ header {
 }
 
 .main_logo img {
-    width: 330px;
-    height: 80px;
+    width: 100px;
     display: block; 
-    margin: 10px auto;
+    margin: 20px auto;
+}
+
+.nav_1 {
+  align-items: center;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.nav_1 a {
+  font-family: 'Jalnan';
+  font-size: 13px;
 }
 
 .nav_icon img {
-    width: 70px;
-    padding-right: 28px;
+    width: 45px;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.nav_icon img:hover {
+  background: url("images/nav_icon1_1.png");
 }
 
 .nav-bar {
-  background: #ffdb26;
-  padding: 30px 250px 20px;
+  background: #f9de4a;
+  padding: 17px 250px 17px;
   text-align: center;
-}
-
-.nav-bar a {
-  padding-right: 30px;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.nav-bar a:last-child {
-  padding-right: 0px;
-  
+  display: flex;
+  margin-left: 90px;
 }
 
 .slider {
@@ -115,8 +120,7 @@ header {
     float: left;
     background: none;
     border: none;
-    margin-left: 10px;
-    margin-top: -190px;
+    margin: -190px 0 0 10px;
 }
 
 .slider_btn1 img {
@@ -129,8 +133,7 @@ header {
 }
 
 .slider_btn2 {
-    margin-top: -190px;
-    margin-right: 10px;
+    margin: -190px 10px 0 0;
     float: right;
     background: none;
     border: none;
@@ -179,16 +182,21 @@ header {
 /* promotion */
 
 .promotion {
-    height: 500px;
+    height: 480px;
     background: #ffffff;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 700;
 }
 
-.promotion a:last-child {
+.promotion a {
+    font-family: 'Jalnan';
+}
+
+.promotion a:nth-child(2) {
     color: #ea433e;
+    font-family: 'Jalnan';
 }
 
 .promotion_container {
@@ -200,44 +208,44 @@ header {
 }
 
 .promotion_box {
-  padding-top: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-bottom:30px;
-  width: 300px;
-  height: 340px;
+  padding-top: 10px;
+  margin: 30px 0 30px 20px;
+  width: 265px;
+  height: 300px;
   border: 1px solid #dbdbdb;
   float: left;
 }
 
 .promotion_box a:first-child {
-  font-size: 13px;
+  font-family: 'Jalnan';
+  font-size: 11px;
   color: black;
   text-align: center;
 }
 
 .promotion_box a {
-   font-size: 16px;
+   font-size: 13px;
    color: black;
    padding-bottom: 20px;
    text-align: center;
+   font-family: 'Nanum Gothic', sans-serif;
   }
 
-.promotion_img {
-    padding-top: 20px;
-    width: 300px;
-    height: 170px;
+.promotion_img img {
+    padding-top: 25px;
+    width: 100px;
+    height: 120px;
     object-fit: cover;
 }
 
 .promotion_btn {
     background-color: #000;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 10px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
 }
 
@@ -245,9 +253,10 @@ header {
 
 .eventText{
 text-align: center;
-font-size: 27px;
+font-size: 28px;
 font-weight: 700;
-padding-bottom: 3%;
+padding-bottom: 5%;
+font-family: 'Jalnan';
 }
 .eventText a:last-child {
   color: #3b86f8;
@@ -255,7 +264,7 @@ padding-bottom: 3%;
 
 .seasonEvent {
   width: 100%;
-  height: 500px;
+  height: 530px;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -266,8 +275,8 @@ padding-bottom: 3%;
 .img-slider{
   margin-top: 50px;
   position: relative;
-  width: 900px;
-  height: 350px;
+  width: 850px;
+  height: 380px;
 }
 .img-slider .slide{
   position: absolute;
@@ -344,6 +353,7 @@ padding-bottom: 3%;
     align-items: center;
     text-align: center;
     height: 150px;
+    margin-left: -80px;
 }
 
 .guide img {
@@ -365,35 +375,37 @@ padding-bottom: 3%;
 
 .guide1 {
     float: left;
-    margin-left: 47px;
-    margin-top: 15px;
+    margin: 15px 0 0 47px;
 }
 
 .guide1 a:last-child {
-    margin-left: 87px;
+    margin-left: 90px;
 }
 
 .guide2 {
     float: left;
-    margin-left: 90px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .guide2 a:last-child {
-    margin-left: 65px;
+    margin-left: 69px;
 }
 
 .guide3 {
     float: left;
-    margin-left: 90px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .guide3 a:last-child {
-    margin-left: 79px;
+    margin-left: 76px;
 }
 
 .guide4 {
-    float: left;
-    margin-left: 90px;
+  margin-top: 15px;
+  margin-left: -25px;
+  float: left;
 }
 
 .guide4 a:last-child {
@@ -553,7 +565,7 @@ padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 148px;
+  height: 128px;
   box-sizing: border-box; 
   background: #f5f5f5;
   padding: 0;
@@ -574,27 +586,29 @@ padding-bottom: 3%;
 }
 
 .celsius{
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 900;
   color: black;
-  margin-right: 10%;
+  margin-top: 5px;
+  margin-right: 13%;
+  margin-left: 11%;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
 .weather img{
-  height: 55px;
-  width: 55px;
-  padding-right: 40px;
+  height: 45px;
+  width: 45px;
+  padding-right: 64px;
 }
 
 .openingHours{
-  padding-right: 20px;
+  padding-right: 21px;
 }
 
 .openingHours > div:first-child {
   padding-bottom: 2%;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
   text-align: left;
@@ -614,28 +628,28 @@ padding-bottom: 3%;
 
 .parkInfo{
   margin: 0 1% 0 2.5%;
-  width: 235px;
-  height: 60px;
-  font-size: 18px;
+  width: 196px;
+  height: 50px;
+  font-size: 16px;
   border: 1px solid rgb(110, 110, 110);
 }
 
 .ticketSearch{
-  width: 235px;
-  height: 60px;
-  font-size: 18px;
+  width: 196px;
+  height: 50px;
+  font-size: 16px;
   border: 1px solid rgb(110, 110, 110);
 }
 
 /* FOOTER */
 
 footer {
+  font-family: 'Noto Sans KR', sans-serif;
   position: relative;
-  height: 250px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #161616;
-  background: #F9DD4B;
+  height: 240px;
+  font-size: 17px;
+  color: #9a9a9a;
+  background: #323232;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,16 +669,15 @@ footer .footer_content {
 
 /* legologos */
 footer img {
-  width: 130px;
-  height: 30px;
-  margin-right: 1rem;
+  width: 100px;
+  margin-right: 1.5rem;
 }
 
 footer .vl {
   width: 1.5px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin: 0 15px;
+  height: 100px;
+  background-color: #9a9a9a;
+  margin: 0 20px;
 }
 
 footer .footer_title {
@@ -678,17 +691,20 @@ footer .footer_title a {
 }
 
 footer .copyright {
-  font-size: 17px;
+  font-size: 15px;
   order: 2;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 footer .SNS img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 2%;
+  width: 27px;
+  height: 27px;
+  margin-bottom: 5%;
 }
 
 footer .contact-info {
+  font-size: 15px;
   display: flex;
   margin-left: auto; 
 }

@@ -41,16 +41,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/mb_themepark.css">
+  <link rel="stylesheet" href="./css/mb_navmenu.css">
 
+  <script src="./js/mb_navmenu.js"></script>
   <script src="https://kit.fontawesome.com/ed3cd54472.js"crossorigin="anonymous"></script>
   
  
   <script>
-  window.addEventListener('DOMContentLoaded', function() {
-    var currentYearElement = document.getElementById('current-year');
-    var currentYear = new Date().getFullYear();
-    currentYearElement.textContent = '©' + currentYear + ' The LEGO Group. All rights reserved.';
-  });
+    window.addEventListener('DOMContentLoaded', function() {
+      var currentYearElement = document.getElementById('current-year');
+      var currentYear = new Date().getFullYear();
+      currentYearElement.textContent = '©' + currentYear + ' The LEGO Group. All rights reserved.';
+
+      const hamburgerLink = document.getElementById('hamburger-link');
+      const navmenu = document.getElementById('navmenu');
+
+      hamburgerLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        navmenu.classList.toggle('show-navmenu');
+      });
+    });
   </script>
 
   <style>
@@ -81,22 +91,91 @@
 
 <body>
   
-  <div id="screen-size-message">Oops! Your screen size is too big. Make it smaller for the best experience!</div>
+  <div class="navmenu-page-container" id="navmenu">
+    <div class="nav_top_line">
+        <div>
+          <img src="images/mb_lang.png" alt="...">
+        </div>
+        <div>
+          <img class="close-button" onclick="closeNavMenu()" src="images/mb_xbtn.png" alt="...">
+        </div>
+    </div>  
+    
+    <div class="menu">
+      <div class="menu-item search-bar">
+        <span class="search-icon"><i class="material-icons">search</i></span>
+          <input class="search-text" id="searchInput"type="text" name="" placeholder="SEARCH FOR ..."></input>
+      </div>
 
-  <!-- nav -->
+      <div class="weather">
+        <div class="temperature">
+          <h1 class="celsius">14°</h1>
+          <img class="weather-icon-mb" src="./images/banana.png" alt="weather_icon">
+        </div>        
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 파크 & 티켓
+        <ul class="submenu">
+          <a href="./mb_onedayPass.html"><li>1일 / 오후+</a></li>
+          <li>시즌 / 연간</li>
+          <li>EXTRA</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">LEGOLAND 호텔
+        <ul class="submenu">
+          <li>호텔</li>
+          <li>BASIC OFFER</li>
+          <li>SPECIAL</li>
+        </ul>
+      </div>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">즐길거리
+        <ul class="submenu">
+          <li class="submenu-item" onclick="toggleSubmenu(this)"><a href="./mb_themepark.html">테마파크</a>
+            <ul class="submenu">
+              <li>어트랙션</li>
+              <li>엔터테인먼트</li>
+            </ul>
+          </li>
+          <li>시즌이벤트</li>
+          <li>프로모션</li>
+        </ul>
+      </div>      
   
-  <div class="mb_top_line">
-    <div class="mb_main_logo"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i>
+      
+      <div class="menu-item" onclick="toggleSubmenu(this)">이용가이드
+        <ul class="submenu">
+          <li>이용정보</li>
+          <li>편의시설 / 제도</li>
+          <li>고객문의</li>
+        </ul>
+      </div>
+      
     </div>
 
+    <div class="sns-icon">
+      <img src="images/sns-icon.png" alt="SNS Icon">
+    </div>
+
+  </div>
+
+<div id="main-page-container">
+
+  <div class="mb_top_line">
+    <div class="mb_main_logo"><img src="images/logo.png" alt="모바일 웹으로 뿅!">
+    </div>  
     <div class="mb_hamburger_btn">
       <img src="images/mb_lang.png" alt="...">
-      <div>
-      <a href="./mb_navmenu.html"><img src="images/mb_hamburger.png" alt="..."></a>
-      </div>
+      <a id="hamburger-link">
+        <img src="images/mb_hamburger.png" alt="...">
+      </a>
     </div>
   </div>
 
+  <div id="screen-size-message">Oops! Your screen size is too big. Make it smaller for the best experience!</div>
+
+  <!-- nav -->
 
   <div class="main">
     THEME PARK
@@ -168,7 +247,7 @@
     <span id="current-year"></span>
   </div>
 </div>
-  
+</div>
 
 </body>
 </html>

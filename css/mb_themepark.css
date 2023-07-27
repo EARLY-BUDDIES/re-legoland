@@ -15,17 +15,37 @@ body {
     #screen-size-message {
       display: none;
     }
-    .mb_lang img {
-      float: right;
-      margin-top: 28px;
-      width: 20px;
+    .navmenu-page-container {
+      display: none;
     }
-    .mb_hamburger_btn img {
-      float: left;
-      margin-top: 28px;
-      margin-right: 15px;
-      width: 20px;
+
+    .show-navmenu {
+      display: block;
     }
+
+    /* Hide the main content when the navigation menu is shown */
+    .show-navmenu ~ #main-page-container {
+      display: none;
+    }
+
+      .mb_main_logo img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 200px;
+    margin-right: 85px;
+  }
+  .mb_lang img {
+    float: right;
+    margin-top: 30px;
+    width: 20px;
+  }
+  .mb_hamburger_btn img {
+    float: left;
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 20px;
+  }
     .mb_top_line {
       background-color:  #6B6B6B;
       height: 70px;

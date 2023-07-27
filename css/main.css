@@ -26,15 +26,33 @@ header {
     margin: 20px auto;
 }
 
+.nav_1 {
+  align-items: center;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.nav_1 a {
+  font-family: 'Jalnan';
+  font-size: 13px;
+}
+
 .nav_icon img {
-    width: 40px;
-    padding-right: 40px;
+    width: 45px;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.nav_icon img:hover {
+  background: url("images/nav_icon1_1.png");
 }
 
 .nav-bar {
   background: #f9de4a;
   padding: 17px 250px 17px;
   text-align: center;
+  display: flex;
+  margin-left: 90px;
 }
 
 .slider {

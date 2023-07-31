@@ -163,8 +163,9 @@ body {
   }
   
   .temperature img{
-    height: 30px;
+    height: 20px;
     width: 30px;
+    margin-top: 40px;
   }
 
   .sns-icon {

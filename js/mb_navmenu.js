@@ -21,7 +21,6 @@ function toggleSubmenu(menuItem) {
 }
 
 // WEATHER
-const apiKey = "317d1cdbbcf8d67b187b125a53b7c13e";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
 
 async function checkMobileWeather() {

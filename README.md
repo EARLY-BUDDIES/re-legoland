@@ -5,7 +5,7 @@
 
 
 # PREVIEW
-<img src="https://velog.velcdn.com/images/erica990604/post/f56a51ef-9eb8-45e5-8dfe-fe287f229713/image.png" width="700"/>
+<img src="https://velog.velcdn.com/images/erica990604/post/f56a51ef-9eb8-45e5-8dfe-fe287f229713/image.png"/>
 
 # Renewal Feature
 - 핵심 정보 강조 : 사용자들이 원하는 정보를 쉽게 찾을 수 있도록 항목별 중요도 비율에 따라 상대적인 중요도를 고려하여 섹션 배치

@@ -1,11 +1,16 @@
 # re-legoland
 레고랜드 웹사이트는 레고를 주제로한 테마파크인 ‘legoland korea resort’를 소개하는 공간입니다. 티켓과 호텔을 예약할 수 있고 진행하고 있는 프로모션, 편의시설에 대한 정보 등을 안내하고 있습니다. 레고의 시그니처 컬러를 강조한 디자인과 블럭을 연상하는 레이아웃으로 브랜드의 아이덴티티가 확실하게 느껴지는 것이 특징입니다. 하지만 지나치게 뚜렷한 컬러와 가독성이 떨어지는 레이아웃, 명확하지 않은 카테고리 분류로 인해 사용하는데 있어 편의성이 떨어지는 느낌을 받았습니다. 레고랜드만의 특색을 잃지 않으면서 사용자에게 편의성을 제공하기위해 리디자인을 계획했습니다.
 
+# PREVIEW
+<img src="https://velog.velcdn.com/images/erica990604/post/f56a51ef-9eb8-45e5-8dfe-fe287f229713/image.png" width=600px/>
+
 # DEMO
 
+![](https://velog.velcdn.com/images/erica990604/post/983f8793-2ad8-4193-9e6d-45b507f7d7fd/image.gif)
 
-# PREVIEW
-<img src="https://velog.velcdn.com/images/erica990604/post/f56a51ef-9eb8-45e5-8dfe-fe287f229713/image.png"/>
+![](https://velog.velcdn.com/images/erica990604/post/2943f246-1768-4d2f-a246-3e41dad001a2/image.gif)
+
+https://earlybuddies.netlify.app/ 
 
 # Renewal Feature
 - 핵심 정보 강조 : 사용자들이 원하는 정보를 쉽게 찾을 수 있도록 항목별 중요도 비율에 따라 상대적인 중요도를 고려하여 섹션 배치

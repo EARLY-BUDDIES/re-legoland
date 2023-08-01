@@ -1,9 +1,9 @@
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 header {
-    background: #f9de4a;
+  background: #f9de4a;
 }
 
 #floatingIconContainer {
@@ -35,9 +35,9 @@ header {
 }
 
 .main_logo img {
-    width: 100px;
-    display: block; 
-    margin: 20px auto;
+  width: 100px;
+  display: block;
+  margin: 20px auto;
 }
 
 .nav_1 {
@@ -47,14 +47,14 @@ header {
 }
 
 .nav_1 a {
-  font-family: 'Jalnan';
+  font-family: "Jalnan";
   font-size: 13px;
 }
 
 .nav_icon img {
-    width: 45px;
-    display: flex;
-    margin-bottom: 7px;
+  width: 45px;
+  display: flex;
+  margin-bottom: 7px;
 }
 
 .nav_icon img:hover {
@@ -70,16 +70,16 @@ header {
 }
 
 .slider {
-    width: 100%;
-    background: #b22520;
+  width: 100%;
+  background: #b22520;
 }
 
 .sliderContainer {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   background-color: #b22520;
-  height: 44vh; 
+  height: 44vh;
 }
 
 .slider_box {
@@ -89,11 +89,11 @@ header {
 }
 
 .reservation {
-  background-color: #2B2A27;
+  background-color: #2b2a27;
   width: 230px;
   height: 190px;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.321);
-  position: relative; 
+  position: relative;
 }
 
 .inner {
@@ -101,109 +101,108 @@ header {
   margin: 0 auto;
   overflow: hidden;
 }
- 
+
 .images {
-    margin-top: 50px;
-    width: 500px;
-    height: 300px;
-    display: flex;
-    position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  position: relative;
 }
 
 .images img {
-     width: 500px;
-     height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 .slider_btn1 {
-    float: left;
-    background: none;
-    border: none;
-    margin: -190px 0 0 10px;
+  float: left;
+  background: none;
+  border: none;
+  margin: -190px 0 0 10px;
 }
 
 .slider_btn1 img {
-    width: 48px;
-    opacity: 50%;
+  width: 48px;
+  opacity: 50%;
 }
 
 .slider_btn1 img:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .slider_btn2 {
-    margin: -190px 10px 0 0;
-    float: right;
-    background: none;
-    border: none;
+  margin: -190px 10px 0 0;
+  float: right;
+  background: none;
+  border: none;
 }
 
 .slider_btn2 img {
-    width: 48px;
+  width: 48px;
 }
 
-  /* RESERVATION / Calendar */
+/* RESERVATION / Calendar */
 
-  .calendar{
-    display: flex;
-    justify-content: center;
-    margin-top: 7%;
-  }
-  
-  .calendar input[type="date"]{
-    position: relative;
-    margin-top: 2px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 5px;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px; 
-    background: #f4f4f4 url(../images/calendar_icon.jpg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: 90%;
-    font-size: 12px;
-    border: none;
-    outline: none;
-  }
-  
-  .calendar input[type="date"]::-webkit-calendar-picker-indicator{
-    cursor: pointer;
-    width: 40px;
-    opacity: 0;
-  }
-  
-  .wrapper{
-    display: flex;
-  }
-  
+.calendar {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.calendar input[type="date"] {
+  position: relative;
+  margin-top: 2px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background: #f4f4f4 url(../images/calendar_icon.jpg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  font-size: 12px;
+  border: none;
+  outline: none;
+}
+
+.calendar input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  width: 40px;
+  opacity: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
 /* promotion */
 
 .promotion {
-    height: 480px;
-    background: #ffffff;
-    padding-top: 60px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
+  height: 480px;
+  background: #ffffff;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .promotion a {
-    font-family: 'Jalnan';
+  font-family: "Jalnan";
 }
 
 .promotion a:nth-child(2) {
-    color: #ea433e;
-    font-family: 'Jalnan';
+  color: #ea433e;
+  font-family: "Jalnan";
 }
 
 .promotion_container {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .promotion_box {
@@ -216,46 +215,45 @@ header {
 }
 
 .promotion_box a:first-child {
-  font-family: 'Jalnan';
+  font-family: "Jalnan";
   font-size: 11px;
   color: black;
   text-align: center;
 }
 
 .promotion_box a {
-   font-size: 13px;
-   color: black;
-   padding-bottom: 20px;
-   text-align: center;
-   font-family: 'Nanum Gothic', sans-serif;
-  }
+  font-size: 13px;
+  color: black;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
 
 .promotion_img img {
-    padding-top: 25px;
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
+  padding-top: 25px;
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
 }
 
 .promotion_btn {
-    background-color: #000;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 10px 25px;
-    border: none;
+  background-color: #000;
+  margin: 12px 0 10px 0;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border: none;
 }
 
 /* SEASON EVENT */
 
-.eventText{
-text-align: center;
-font-size: 28px;
-font-weight: 700;
-padding-bottom: 5%;
-font-family: 'Jalnan';
+.eventText {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 5%;
+  font-family: "Jalnan";
 }
 .eventText a:last-child {
   color: #3b86f8;
@@ -266,33 +264,32 @@ font-family: 'Jalnan';
   height: 530px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   background: #eaeaea;
 }
 
 /* SEASON EVENT / Slider */
-.img-slider{
+.img-slider {
   margin-top: 50px;
   position: relative;
   width: 850px;
   height: 380px;
 }
-.img-slider .slide{
+.img-slider .slide {
   position: absolute;
   width: 100%;
   clip-path: circle(0% at 0 150%);
 }
-.img-slider .slide.active{
+.img-slider .slide.active {
   clip-path: none;
   transition: 2s;
   transition-property: clip-path;
 }
-.img-slider .slide img{
+.img-slider .slide img {
   z-index: 1;
   height: 350px;
   width: 100%;
 }
-.img-slider .navigation{
+.img-slider .navigation {
   z-index: 2;
   position: absolute;
   display: flex;
@@ -301,7 +298,7 @@ font-family: 'Jalnan';
   left: 50%;
   transform: translateX(-50%);
 }
-.img-slider .navigation .btn{
+.img-slider .navigation .btn {
   background: white;
   width: 12px;
   height: 12px;
@@ -309,133 +306,129 @@ font-family: 'Jalnan';
   border-radius: 50%;
   cursor: pointer;
 }
-.img-slider .navigation .btn.active{
+.img-slider .navigation .btn.active {
   background: #3b86f8;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 820px){
-  .img-slider{
+@media (max-width: 820px) {
+  .img-slider {
     width: 600px;
     height: 375px;
   }
-  .img-slider .navigation{
-  bottom: 25px;
+  .img-slider .navigation {
+    bottom: 25px;
   }
-  .img-slider .navigation .btn{
+  .img-slider .navigation .btn {
     width: 10px;
     height: 10px;
     margin: 8px;
   }
 }
 
-@media (max-width: 620px){
-  .img-slider{
+@media (max-width: 620px) {
+  .img-slider {
     width: 400px;
     height: 250px;
   }
-  .img-slider .navigation{
-  bottom: 15px;
+  .img-slider .navigation {
+    bottom: 15px;
   }
-  .img-slider .navigation .btn{
+  .img-slider .navigation .btn {
     width: 8px;
     height: 8px;
     margin: 6px;
   }
 }
 
-
 .guide {
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 150px;
-    margin-left: -80px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  margin-left: -80px;
 }
 
 .guide img {
-    margin: 13px 7px 0 0;
-    vertical-align: middle;
-    width: 40px;
+  margin: 13px 7px 0 0;
+  vertical-align: middle;
+  width: 40px;
 }
 
-.guide a{
-    font-size: 20px;
-    margin-top: 30px;
+.guide a {
+  font-size: 20px;
+  margin-top: 30px;
 }
 
-.guide a:last-child{
-    font-size: 13px;
-    font-weight: bold;
-    color: #7b7b7b;
+.guide a:last-child {
+  font-size: 13px;
+  font-weight: bold;
+  color: #7b7b7b;
 }
 
 .guide1 {
-    float: left;
-    margin: 15px 0 0 47px;
+  float: left;
+  margin: 15px 0 0 47px;
 }
 
 .guide1 a:last-child {
-    margin-left: 90px;
+  margin-left: 90px;
 }
 
 .guide2 {
-    float: left;
-    margin-top: 15px;
-    margin-left: 10px;
+  float: left;
+  margin: 15px 0 0 10px;
 }
 
 .guide2 a:last-child {
-    margin-left: 69px;
+  margin-left: 69px;
 }
 
 .guide3 {
-    float: left;
-    margin-top: 15px;
-    margin-left: 10px;
+  float: left;
+  margin: 15px 0 0 10px;
 }
 
 .guide3 a:last-child {
-    margin-left: 76px;
+  margin-left: 76px;
 }
 
 .guide4 {
-  margin-top: 15px;
-  margin-left: -25px;
+  margin: 15px 0 0 -25px;
   float: left;
 }
 
 .guide4 a:last-child {
-    margin-left: 110px;
+  margin-left: 110px;
 }
 
 .sns {
-    margin-top: 30px;
-    height: 400px;
-    padding-top: 50px;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
+  margin-top: 30px;
+  height: 400px;
+  padding-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .sns a:first-child {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .sns a:last-child {
-    font-size: 15px;
-    font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .sns img {
-    padding: 5px;
-    width: 200px;
+  padding: 5px;
+  width: 200px;
 }
 
 .sns_img {
-    margin: 60px 0;
+  margin: 60px 0;
 }
 
 .quickTab {
@@ -457,29 +450,29 @@ font-family: 'Jalnan';
 }
 
 .quickTab ul li.active {
-  background-color: #2B2A27;
+  background-color: #2b2a27;
 }
 
 .quickTab ul li:hover {
   cursor: pointer;
-} 
+}
 
 /* RESERVATION / Calendar */
 
-.calendar{
+.calendar {
   display: flex;
   justify-content: center;
   margin-top: 7%;
 }
 
-.calendar input[type="date"]{
+.calendar input[type="date"] {
   position: relative;
   text-align: center;
   box-sizing: border-box;
   padding: 5px;
   width: 180px;
   height: 30px;
-  border-radius: 5px; 
+  border-radius: 5px;
   background: #f4f4f4 url(../images/calendar_icon.jpg);
   background-size: 30px;
   background-repeat: no-repeat;
@@ -489,13 +482,13 @@ font-family: 'Jalnan';
   outline: none;
 }
 
-.calendar input[type="date"]::-webkit-calendar-picker-indicator{
+.calendar input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   width: 40px;
   opacity: 0;
 }
 
-.reservation .quantityTag{
+.reservation .quantityTag {
   display: flex;
   margin: 6% 0 4% 0;
   justify-content: center;
@@ -506,11 +499,11 @@ font-family: 'Jalnan';
   font-weight: 700;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
 }
 
-.valueBtn{
+.valueBtn {
   height: 30px;
   width: 90px;
   display: flex;
@@ -521,25 +514,25 @@ font-family: 'Jalnan';
   margin: 2% 1% 0 10%;
 }
 
-.valueBtn:nth-child(2){
+.valueBtn:nth-child(2) {
   margin-left: 2px;
 }
 
-.valueBtn span{
+.valueBtn span {
   width: 100%;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
 }
-.valueBtn span.num{
+.valueBtn span.num {
   font-size: 13px;
   border-right: 2px solid rgba(0, 0, 0, 0.2);
   border-left: 2px solid rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
 
-.buyNow{
+.buyNow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,61 +540,58 @@ font-family: 'Jalnan';
   height: 42px;
   font-size: 16px;
   font-weight: 900;
-  background-color: #FEE50F;
+  background-color: #fee50f;
   border-radius: 10px;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -58%);
   cursor: pointer;
-  font-family: 'Jalnan';
+  font-family: "Jalnan";
 }
 
 /* WEATHER */
 
-.weather{
+.weather {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 128px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background: #f5f5f5;
   padding: 0;
 }
 
-.vl{
+.vl {
   display: inline-block;
   justify-content: center;
   align-items: center;
   width: 1.8px;
   height: 60px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   margin-left: 1%;
 }
 
-.temperature{
+.temperature {
   display: flex;
 }
 
-.celsius{
+.celsius {
   font-size: 36px;
   font-weight: 900;
   color: black;
-  margin-top: 5px;
-  margin-right: 13%;
-  margin-left: 11%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
-.weather img{
+.weather img {
   height: 45px;
   width: 45px;
   padding-right: 64px;
 }
 
-.openingHours{
+.openingHours {
   padding-right: 21px;
 }
 
@@ -616,16 +606,16 @@ font-family: 'Jalnan';
 .openingHours > div:last-child {
   font-size: 21px;
   font-weight: 800;
-} 
+}
 
-.weather button{
+.weather button {
   background-color: white;
   border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.parkInfo{
+.parkInfo {
   margin: 0 1% 0 2.5%;
   width: 196px;
   height: 50px;
@@ -633,7 +623,7 @@ font-family: 'Jalnan';
   border: 1px solid rgb(110, 110, 110);
 }
 
-.ticketSearch{
+.ticketSearch {
   width: 196px;
   height: 50px;
   font-size: 16px;
@@ -643,7 +633,7 @@ font-family: 'Jalnan';
 /* FOOTER */
 
 footer {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   position: relative;
   height: 240px;
   font-size: 17px;
@@ -658,13 +648,12 @@ footer .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 footer .footer_content {
-  margin-right: 15rem; 
+  margin-right: 15rem;
 }
-
 
 /* legologos */
 footer img {
@@ -692,8 +681,7 @@ footer .footer_title a {
 footer .copyright {
   font-size: 15px;
   order: 2;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px 0 0 10px;
 }
 
 footer .SNS img {
@@ -705,5 +693,5 @@ footer .SNS img {
 footer .contact-info {
   font-size: 15px;
   display: flex;
-  margin-left: auto; 
+  margin-left: auto;
 }

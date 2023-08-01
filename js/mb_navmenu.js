@@ -1,27 +1,28 @@
 function toggleSubmenu(menuItem) {
-  const submenu = menuItem.querySelector('.submenu');
-  const allSubmenus = document.querySelectorAll('.submenu');
-  const parentMenuItems = document.querySelectorAll('.menu-item');
+  const submenu = menuItem.querySelector(".submenu");
+  const allSubmenus = document.querySelectorAll(".submenu");
+  const parentMenuItems = document.querySelectorAll(".menu-item");
 
-  if (submenu.style.display === 'block') {
-    submenu.style.display = 'none';
-    menuItem.classList.remove('active');
+  if (submenu.style.display === "block") {
+    submenu.style.display = "none";
+    menuItem.classList.remove("active");
   } else {
     // Close all submenus and remove active class from other menu items
     allSubmenus.forEach((sub) => {
-      sub.style.display = 'none';
+      sub.style.display = "none";
     });
     parentMenuItems.forEach((parentItem) => {
-      parentItem.classList.remove('active');
+      parentItem.classList.remove("active");
     });
 
-    submenu.style.display = 'block';
-    menuItem.classList.add('active');
+    submenu.style.display = "block";
+    menuItem.classList.add("active");
   }
 }
 
 // WEATHER
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
+const apiUrl =
+  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
 
 async function checkMobileWeather() {
   try {
@@ -29,7 +30,8 @@ async function checkMobileWeather() {
     const mobileData = await mobileResponse.json();
 
     const mobileWeatherIcon = document.querySelector(".weather-icon-mb");
-    document.querySelector(".celsius").innerHTML = Math.round(mobileData.main.temp) + "°";
+    document.querySelector(".celsius").innerHTML =
+      Math.round(mobileData.main.temp) + "°";
 
     if (mobileData.weather[0].main == "Clouds") {
       mobileWeatherIcon.src = "images/clouds.png";
@@ -52,13 +54,13 @@ async function checkMobileWeather() {
 checkMobileWeather();
 
 function closeNavMenu() {
-  document.body.classList.remove('navmenu-open');
+  document.body.classList.remove("navmenu-open");
 
   // Delay the execution of the remaining code to allow the CSS transition to complete
   setTimeout(() => {
     // Close the navmenu by hiding it or removing it from the DOM
-    const navmenu = document.querySelector('.navmenu-container');
-    navmenu.style.left = '100%';
+    const navmenu = document.querySelector(".navmenu-container");
+    navmenu.style.left = "100%";
 
     // Show the previous screen by going back in history after a slight delay
     setTimeout(() => {
@@ -68,6 +70,6 @@ function closeNavMenu() {
 }
 
 function closeNavMenu() {
-  const navmenu = document.getElementById('navmenu');
-  navmenu.classList.remove('show-navmenu');
+  const navmenu = document.getElementById("navmenu");
+  navmenu.classList.remove("show-navmenu");
 }

@@ -4,16 +4,19 @@ body {
 
 @media screen and (max-width: 390px) {
   .navmenu-page-container {
-    font-family: 'JalnanOTF', sans-serif;
-    background-color: #F8D950;
+    font-family: "JalnanOTF", sans-serif;
+    background-color: #f8d950;
     margin-left: 10%;
     margin-right: 15%;
   }
-  
-  a, a:hover, a:focus, a:active {
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
     text-decoration: none;
     color: inherit;
-}
+  }
 
   #screen-size-message {
     display: none;
@@ -45,17 +48,17 @@ body {
     align-items: center;
     font-size: 13px;
   }
-  
+
   .search-icon {
     margin-right: 10px;
   }
-  
+
   .search-text {
     font-size: 17px;
   }
 
   #searchInput {
-    font-family: 'JalnanOTF', sans-serif;
+    font-family: "JalnanOTF", sans-serif;
     border: none;
     background-color: #f9d851;
     outline: none;
@@ -67,7 +70,7 @@ body {
   #searchInput::placeholder {
     color: black;
   }
-  
+
   #searchInput:focus {
     outline: none;
   }
@@ -86,7 +89,7 @@ body {
   .menu-item:not(:first-child)::after {
     content: "";
     position: absolute;
-    bottom: -10px; 
+    bottom: -10px;
     left: 0px;
     right: -10px;
     height: 2px;
@@ -94,14 +97,14 @@ body {
   }
 
   .menu-item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0px;
-  right: -10px;
-  height: 2px;
-  background-color: black;
-}
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    right: -10px;
+    height: 2px;
+    background-color: black;
+  }
 
   .menu-item:first-child {
     border-bottom: none;
@@ -111,7 +114,7 @@ body {
   .submenu-open .submenu {
     display: block;
   }
-  
+
   .submenu {
     display: none;
     list-style-type: disc;
@@ -121,15 +124,15 @@ body {
     font-size: 12px;
     list-style-type: none;
   }
-  
+
   .submenu li {
     padding-bottom: 20px;
   }
-  
+
   .submenu li:last-child {
     padding-bottom: 0;
   }
-  
+
   /* bigger bullet points */
   .submenu li::before {
     content: "";
@@ -142,27 +145,35 @@ body {
   }
 
   @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-  
+
   @keyframes fade-out {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
-  
-  .temperature{
+
+  .temperature {
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
   }
-  
-  .celsius{
+
+  .celsius {
     font-size: 70px;
     color: black;
   }
-  
-  .temperature img{
+
+  .temperature img {
     height: 20px;
     width: 30px;
     margin-top: 40px;
@@ -182,12 +193,12 @@ body {
   .menu,
   .sns-icon {
     display: none;
-  }  
+  }
   #screen-size-message {
     display: block;
     text-align: center;
     font-size: 18px;
-    color: #FF5252;
+    color: #ff5252;
     margin-top: 20px;
   }
 }

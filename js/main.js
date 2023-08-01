@@ -8,38 +8,37 @@ const prevBtn = document.querySelector(".slider_btn1");
 const nextBtn = document.querySelector(".slider_btn2");
 const images = document.querySelector(".images");
 
-function next(){
-  if(curPos < 2){
-    prevBtn.removeAttribute('disabled')
+function next() {
+  if (curPos < 2) {
+    prevBtn.removeAttribute("disabled");
     positionValue -= IMAGE_WIDHT;
     images.style.transform = `translateX(${positionValue}px)`;
     curPos += 1;
   }
-  if(curPos === 2){
-    nextBtn.setAttribute('disabled', 'true'); 
+  if (curPos === 2) {
+    nextBtn.setAttribute("disabled", "true");
   }
 }
 
-function prev(){
-  if(curPos > 0){
-    nextBtn.removeAttribute('disabled')
+function prev() {
+  if (curPos > 0) {
+    nextBtn.removeAttribute("disabled");
     positionValue += IMAGE_WIDHT;
     images.style.transform = `translateX(${positionValue}px)`;
     curPos -= 1;
   }
-  if(curPos === 0){
-    prevBtn.setAttribute('disabled', 'true'); 
+  if (curPos === 0) {
+    prevBtn.setAttribute("disabled", "true");
   }
 }
 
-function init(){
-  prevBtn.setAttribute('disabled', 'true');  
+function init() {
+  prevBtn.setAttribute("disabled", "true");
   prevBtn.addEventListener("click", prev);
   nextBtn.addEventListener("click", next);
 }
 
 init();
-
 
 //   <!-- RESERVATION --> / quickTab
 
@@ -53,54 +52,54 @@ ticketTab.addEventListener("click", () => {
   // Change background color of other tab to #000
   hotelTab.style.backgroundColor = "#000";
 });
-   
+
 hotelTab.addEventListener("click", () => {
   hotelTab.style.backgroundColor = "#2B2A27";
   ticketTab.style.backgroundColor = "#000";
 });
 
-
 //   <!-- RESERVATION --> / quantityTag
 const adultPlus = document.querySelector("#adultPlus"),
-      adultMinus = document.querySelector("#adultMinus"),
-      adultNum = document.querySelector("#adultNum"),
-      childrenPlus = document.querySelector("#childrenPlus"),
-      childrenMinus = document.querySelector("#childrenMinus"),
-      childrenNum = document.querySelector("#childrenNum");
+  adultMinus = document.querySelector("#adultMinus"),
+  adultNum = document.querySelector("#adultNum"),
+  childrenPlus = document.querySelector("#childrenPlus"),
+  childrenMinus = document.querySelector("#childrenMinus"),
+  childrenNum = document.querySelector("#childrenNum");
 
 let adultCount = 1;
 let childrenCount = 1;
 
-adultPlus.addEventListener("click", ()=>{
+adultPlus.addEventListener("click", () => {
   adultCount++;
-  adultCount = (adultCount < 10) ? "0" + adultCount : adultCount;
+  adultCount = adultCount < 10 ? "0" + adultCount : adultCount;
   adultNum.innerText = adultCount;
 });
 
-adultMinus.addEventListener("click", ()=>{
-  if(adultCount > 0){
+adultMinus.addEventListener("click", () => {
+  if (adultCount > 0) {
     adultCount--;
-    adultCount = (adultCount < 10) ? "0" + adultCount : adultCount;
+    adultCount = adultCount < 10 ? "0" + adultCount : adultCount;
     adultNum.innerText = adultCount;
   }
 });
 
-childrenPlus.addEventListener("click", ()=>{
+childrenPlus.addEventListener("click", () => {
   childrenCount++;
-  childrenCount = (childrenCount < 10) ? "0" + childrenCount : childrenCount;
+  childrenCount = childrenCount < 10 ? "0" + childrenCount : childrenCount;
   childrenNum.innerText = childrenCount;
 });
 
-childrenMinus.addEventListener("click", ()=>{
-  if(childrenCount > 0){
+childrenMinus.addEventListener("click", () => {
+  if (childrenCount > 0) {
     childrenCount--;
-    childrenCount = (childrenCount < 10) ? "0" + childrenCount : childrenCount;
+    childrenCount = childrenCount < 10 ? "0" + childrenCount : childrenCount;
     childrenNum.innerText = childrenCount;
   }
 });
 
 // WEATHER
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
+const apiUrl =
+  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=chuncheon";
 
 const weatherIcon = document.querySelector(".weather-icon");
 
@@ -108,42 +107,43 @@ async function checkWeather() {
   const response = await fetch(apiUrl + `&appid=${apiKey}`);
   const data = await response.json();
 
-  document.querySelector(".celsius").innerHTML = Math.round(data.main.temp) + "°";
+  document.querySelector(".celsius").innerHTML =
+    Math.round(data.main.temp) + "°";
 
-  if(data.weather[0].main == "Clouds") {
+  if (data.weather[0].main == "Clouds") {
     weatherIcon.src = "images/clouds.png";
-  } else if(data.weather[0].main == "Clear") {
+  } else if (data.weather[0].main == "Clear") {
     weatherIcon.src = "images/clear.png";
-  } else if(data.weather[0].main == "Rain") {
+  } else if (data.weather[0].main == "Rain") {
     weatherIcon.src = "images/rain.png";
-  } else if(data.weather[0].main == "Drizzle") {
+  } else if (data.weather[0].main == "Drizzle") {
     weatherIcon.src = "images/drizzle.png";
-  } else if(data.weather[0].main == "Snow") {
+  } else if (data.weather[0].main == "Snow") {
     weatherIcon.src = "images/snow.png";
-  } else if(data.weather[0].main == "Wind") {
+  } else if (data.weather[0].main == "Wind") {
     weatherIcon.src = "images/wind.png";
   }
 }
- 
+
 checkWeather();
 
 // Javascript for image slider manual navigation
-let slides = document.querySelectorAll('.slide');
-let btns = document.querySelectorAll('.btn');
+let slides = document.querySelectorAll(".slide");
+let btns = document.querySelectorAll(".btn");
 let currentSlide = 0; // Start from the first slide
 
 // Javascript for image slider manual navigation
-let manualNav = function(manual) {
+let manualNav = function (manual) {
   slides.forEach((slide) => {
-    slide.classList.remove('active');
+    slide.classList.remove("active");
   });
 
   btns.forEach((btn) => {
-    btn.classList.remove('active');
+    btn.classList.remove("active");
   });
 
-  slides[manual].classList.add('active');
-  btns[manual].classList.add('active');
+  slides[manual].classList.add("active");
+  btns[manual].classList.add("active");
 
   // Update currentSlide
   currentSlide = manual;
@@ -156,19 +156,19 @@ btns.forEach((btn, i) => {
 });
 
 // Javascript for image slider autoplay navigation
-let repeat = function() {
+let repeat = function () {
   let repeater = () => {
-    setTimeout(function() {
+    setTimeout(function () {
       slides.forEach((slide) => {
-        slide.classList.remove('active');
+        slide.classList.remove("active");
       });
 
       btns.forEach((btn) => {
-        btn.classList.remove('active');
+        btn.classList.remove("active");
       });
 
-      slides[currentSlide].classList.add('active');
-      btns[currentSlide].classList.add('active');
+      slides[currentSlide].classList.add("active");
+      btns[currentSlide].classList.add("active");
 
       // Increment currentSlide
       currentSlide++;
@@ -187,10 +187,9 @@ let repeat = function() {
 
 repeat();
 
-
 // Footer
 // Update the copyright year automatically
 
-const yearElement = document.getElementById('year');
+const yearElement = document.getElementById("year");
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;

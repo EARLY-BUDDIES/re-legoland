@@ -2,16 +2,16 @@ body {
   background: #f9d851;
 }
 
-  /* Mobile styles */
-  @media screen and (max-width: 390px) {
-    body{
-      background: #f9d851;
-      font-family: 'Noto Sans KR', sans-serif;
-      }
+/* Mobile styles */
+@media screen and (max-width: 390px) {
+  body {
+    background: #f9d851;
+    font-family: "Noto Sans KR", sans-serif;
+  }
 
-    #screen-size-message {
-      display: none;
-    }
+  #screen-size-message {
+    display: none;
+  }
 
   .navmenu-page-container {
     display: none;
@@ -28,10 +28,8 @@ body {
 
   .mb_main_logo img {
     float: left;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin: 15px 207px 0 20px;
     width: 78px;
-    margin-right: 207px;
   }
   .mb_lang img {
     float: right;
@@ -40,10 +38,9 @@ body {
   }
   .mb_hamburger_btn img {
     float: left;
-    margin-top: 30px;
-    margin-right: 15px;
+    margin: 30px 15px 0 0;
     width: 20px;
-    cursor: pointer;;
+    cursor: pointer;
   }
   .mb_top_line {
     height: 70px;
@@ -63,48 +60,45 @@ body {
     background: none;
     border: none;
     margin-top: -165px;
-}
+  }
 
-.main_btn1 img {
+  .main_btn1 img {
     margin-left: 5px;
     width: 42px;
     opacity: 50%;
-}
+  }
 
-.main_btn1 img:hover {
+  .main_btn1 img:hover {
     opacity: 100%;
-}
+  }
 
-.main_btn2 {
+  .main_btn2 {
     margin: -165px 5px 0 0;
     float: right;
     background: none;
     border: none;
-}
+  }
 
-.main_btn2 img {
+  .main_btn2 img {
     width: 42px;
-}
+  }
 
   .mb_box {
-    width: 100%; 
+    width: 100%;
     background-color: black;
     height: 110px;
-
   }
-  .mb_box img{
+  .mb_box img {
     width: 75px;
     float: left;
     display: flex;
-    margin-left: 18px;
-    margin-top: 3px;
+    margin: 3px 0 0 18px;
   }
-
 
   /* promotion */
 
-  .promotion_title{
-    font-family: 'Jalnan';
+  .promotion_title {
+    font-family: "Jalnan";
     font-size: 24px;
     text-align: center;
     display: block;
@@ -113,17 +107,17 @@ body {
   .promotion_detail {
     text-align: center;
   }
-  .promotion_detail img{
+  .promotion_detail img {
     width: 300px;
     margin: 30px 5px 0 10px;
   }
 
   .promotion_box1 {
     box-sizing: border-box;
-		width: 270px;
-		height: 238px;
-		margin: 40px auto 0;
-		background-color: none;
+    width: 270px;
+    height: 238px;
+    margin: 40px auto 0;
+    background-color: none;
     border: 2px solid black;
     border-radius: 10px 10px 0 0;
     box-shadow: 3px 3px;
@@ -138,10 +132,10 @@ body {
 
   .promotion_box2 {
     box-sizing: border-box;
-		width: 270px;
-		height: 75px;
-		margin: 0 auto;
-		background-color: white;
+    width: 270px;
+    height: 75px;
+    margin: 0 auto;
+    background-color: white;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -153,12 +147,12 @@ body {
 
   .promotion_subtitle1 {
     margin-bottom: 7px;
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 15px;
   }
-  
+
   .promotion_subtitle2 {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 13px;
     font-weight: 500;
     color: #7b7b7b;
@@ -176,10 +170,10 @@ body {
     text-align: center;
     float: left;
     box-sizing: border-box;
-		width: 121px;
-		height: 140px;
-		margin: 40px 13px;
-		background-color: white;
+    width: 121px;
+    height: 140px;
+    margin: 40px 13px;
+    background-color: white;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 3px 3px;
@@ -191,10 +185,10 @@ body {
   }
 
   .themepark_subtitle {
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 15px;
-    text-align: center;
     font-size: 12px;
+    text-align: center;
   }
 
   .themepark2 {
@@ -207,11 +201,9 @@ body {
     text-align: center;
     float: left;
     box-sizing: border-box;
-		width: 121px;
-		height: 140px;
-		margin: 0 13px;
-    margin-bottom: 60px;
-		/* background-color: #f9d851; */
+    width: 121px;
+    height: 140px;
+    margin: 0 13px 60px 13px;
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -219,16 +211,14 @@ body {
   }
 
   .themepark_box2 img {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px 0;
     width: 60px;
   }
 
-
-/* entertainment */
+  /* entertainment */
 
   .entertainment_title {
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 24px;
     text-align: center;
     display: block;
@@ -289,22 +279,21 @@ body {
 
   .entertainment_subtitle1 {
     margin-bottom: 7px;
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 15px;
   }
 
   .entertainment_subtitle2 {
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 10px;
     font-weight: 500;
     color: #000000;
   }
 
-
   /* sns */
 
   .sns_title {
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 24px;
     text-align: center;
     display: block;
@@ -312,10 +301,10 @@ body {
 
   .sns_box {
     box-sizing: border-box;
-		width: 270px;
-		height: 260px;
-		margin: 40px auto 0;
-		background-color: #ffffff;
+    width: 270px;
+    height: 260px;
+    margin: 40px auto 0;
+    background-color: #ffffff;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 3px 3px;
@@ -323,7 +312,7 @@ body {
 
   .sns_subtitle {
     margin: 24px 0 20px 30px;
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 15px;
   }
 
@@ -342,7 +331,7 @@ body {
     border-radius: 10px;
   }
 
-  .sns_img img{
+  .sns_img img {
     border: 2px solid black;
     background-color: #7d7d7d;
     margin: 0 auto;
@@ -353,7 +342,7 @@ body {
   }
 
   .sns_comment {
-    font-family: 'Jalnan';
+    font-family: "Jalnan";
     font-size: 12px;
     margin-left: 30px;
   }
@@ -363,8 +352,7 @@ body {
     margin-right: 5px;
   }
 
-
-/* footer */
+  /* footer */
 
   .footer_box {
     margin-top: 65px;
@@ -380,7 +368,7 @@ body {
     padding: 30px;
     border-bottom: 1px solid #7d7d7d;
   }
-  .footer_copyright{
+  .footer_copyright {
     background-color: #333333;
     color: #9e9e9e;
     font-weight: 400;
@@ -388,13 +376,13 @@ body {
     text-align: center;
     padding: 30px;
   }
-  .footer_copyright img{
+  .footer_copyright img {
     width: 70px;
     margin: 0 0 30px 0;
   }
 }
 
-  /* Desktop styles */
+/* Desktop styles */
 @media screen and (min-width: 391px) {
   .navmenu-page-container img,
   .mb_top_line,
@@ -426,7 +414,7 @@ body {
     display: block;
     text-align: center;
     font-size: 18px;
-    color: #FF5252;
+    color: #ff5252;
     margin-top: 20px;
   }
 }

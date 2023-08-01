@@ -9,22 +9,36 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LEGOLAND" />
   <meta property="og:title" content="LEGOLAND Korea" />
-  <meta property="og:description" content="Early Buddies가 새롭게 만들어본 Lego Land" />
+  <meta property="og:description" content="Early Buddies가 새롭게 만들어본 LegoLand" />
   <meta property="og:image" content="./images/LEGOLAND.jpg" />
   <meta property="og:url" content="https://LEGOLAND.co.kr" />
 
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="LEGOLAND" />
   <meta property="twitter:title" content="LEGOLAND Korea" />
-  <meta property="twitter:description" content="Early Buddies가 새롭게 만들어본 Lego Land" />
+  <meta property="twitter:description" content="Early Buddies가 새롭게 만들어본 LegoLand" />
   <meta property="twitter:image" content="./images/LEGOLAND.jpg" />
   <meta property="twitter:url" content="https://LEGOLAND.co.kr" />
 
   <link rel="icon" href="./favicon.png">
+
+  <!-- favicon -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://webfontworld.github.io/goodchoice/Jalnan.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -35,115 +49,287 @@
 
 <body>
 
+    <!-- 모바일 웹으로 고!!  -->
+    <div id="floatingIconContainer">
+      <a href="./mb_main.html">
+      <img src="./images/gotoBuddies.png" alt="Floating Icon" id="floatingIcon">
+      </a>
+    </div>
+
   <!-- HEADER -->
   <header>
-    <div class="inner">
+    <div class="top-line">
+      <a>검색</a>
+      <a>|</a>
+      <a>기업 단체</a>
+      <a>|</a>
+      <a>학생 단체</a>
+      <a>|</a>
+      <a>KO</a>
+    </div>
+    <div class="main_logo">
+      
 
+      <a href="./index.html"><img src="images/logo.png" alt=""></a>
+
+    </div>
+    <div class="nav-bar">
+      <div class="nav_icon">
+      <div class="nav_1">
+        <img src="images/nav_icon1.png" alt="..." />
+        <a>캘린더</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon2.png" alt="..." />
+        <a>예매</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon3.png" alt="..." />
+        <a>호텔</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon4.png" alt="..." />
+        <a>어트랙션</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon5.png" alt="..." />
+        <a>쇼핑</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon6.png" alt="..." />
+        <a>프로모션</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon7.png" alt="..." />
+        <a>지도</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon8.png" alt="..." />
+        <a>가이드</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon9.png" alt="..." />
+        <a>배리어프리</a>
+      </div>
+      <div class="nav_1">
+        <img src="images/nav_icon10.png" alt="..." />
+        <a>QnA</a>
+      </div>
+      </div>
     </div>
   </header>
 
-  <!-- SLIDER -->
 
 
+<div class="sliderContainer">
 
-  <!-- RESERVATION -->
+   <!-- SLIDER -->
+   
+  <div class="slider_box">
+    <div class="inner">
+      <div class="images">
+        <img src="images/lego_slider.png" >
+        <img src="images/lego_slider_1.png" >
+        <img src="images/lego_slider_2.png" >
+      </div>
+    </div>
+    <button class="slider_btn1"><img src="images/prev.png"></button>
+    <button class="slider_btn2"><img src="images/next.png"></button>
+  </div>
 
-
+      <!-- RESERVATION -->
+  <div class="reservation">
+    <div class="quickTab">
+      <ul>
+        <li id="ticketTab" class="ticketReserv active">티켓예매</li>
+        <li id="hotelTab" class="hotelReserve">호텔예약</li>
+      </ul>
+    </div>
+  
+    <div class="calendar">
+      <input type="date">
+    </div>
+  
+    <div class="quantityTag">
+      <span id="adult">성인</span>
+      <span id="children">어린이</span>
+    </div>
+    <div class="wrapper">
+      <div class="valueBtn">
+        <span id="adultMinus" class="minus">-</span>
+        <span id="adultNum" class="num">01</span>
+        <span id="adultPlus" class="plus">+</span>
+      </div>
+      <div class="valueBtn">
+        <span id="childrenMinus" class="minus">-</span>
+        <span id="childrenNum" class="num">00</span>
+        <span id="childrenPlus" class="plus">+</span>
+      </div>
+    </div>
+  
+    <div class="buyNow">BUY NOW</div>  
+  </div>
+</div>
 
   <!-- WEATHER -->
+  
+  <section class="weather">
+    <div class="temperature">
+      <h1 class="celsius">14°</h1>
+      <img src="./images/snow.png" class="weather-icon" alt="weather_icon">
+    </div>
 
+    <div class="openingHours">
+      <div>오늘의 파크 운영시간</div>
+      <div>10:00 AM - 08:00 PM</div>
+    </div>
+
+    <div class="vl"></div>
+    
+    <button class="parkInfo">오늘의 파크 정보</button>
+    <button class="ticketSearch">티켓 검색</button>
+  </section>
 
 
   <!-- PROMOTION -->
-    <div class="promotion">
 
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide1.jpg" alt="" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide2.jpg" alt="" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide3.jpg" alt="" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide4.jpg" alt="" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide5.jpg" alt="" />
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+    <div class="promotion">
+      <a>Ticket</a>
+      <a>Promotion</a>
+      <div class="promotion_container">
+        <div class="promotion_box">
+          <a>할인혜택</br></a>
+          <div class="promotion_img"><img src="images/banana.png" alt="..." /></div>
+          <a>Golden Short Break</a></br>
+            <a>3+1 골든패스 호텔 패키지</a>
+          <div>
+            <button class="promotion_btn">SEE MORE</button>
           </div>
         </div>
+        <div class="promotion_box">
+          <a>할인혜택</br></a>
+          <div class="promotion_img"><img src="images/fox1.png" alt="..." /></div>
+          <a>Golden Short Break</br>
+          3+1 골든패스 호텔 패키지
+          </a>
+          <div>
+            <button class="promotion_btn">SEE MORE</button>
+          </div>
+        </div>
+        <div class="promotion_box">
+          <a>할인혜택</br></a>
+          <div class="promotion_img"><img src="images/fox2.png" alt="..." /></div>
+          <a>Golden Short Break</br>
+            3+1 골든패스 호텔 패키지
+          </a>
+          <div>
+            <button class="promotion_btn">SEE MORE</button>
+          </div>
       </div>
-
-      <div class="swiper-pagination"></div>
-      <div class="swiper-prev">
-        <div class="material-icons">arrow_back</div>
-      </div>
-      <div class="swiper-next">
-        <div class="material-icons">arrow_forward</div>
-      </div>
-
     </div>
-  </section>
+    </div>
 
   <!-- SEASON EVENT -->
-  <section>
-    <div class="inner">
-  
-    </div>
-  </section>
+  <div class="seasonEvent">
+    <div class="img-slider">
+      <div class="eventText">
+        <a>Season</a>
+        <a>Event</a>
+      </div>
+      <div class="slide active">  
+        <img src="./images/seasonEvent_1.png" alt="">
+      </div>
+      <div class="slide">  
+        <img src="./images/seasonEvent_2.png" alt="">
+      </div>
+      <div class="slide">  
+        <img src="./images/seasonEvent_3.png" alt="">
+      </div>
+      <div class="slide">  
+        <img src="./images/seasonEvent_4.png" alt="">
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+  </div>
+</div>
 
 
   <!-- GUIDE -->
-
+    <div class="guide">
+      <div class="guide1">
+      <img src="images/guide_img1.png" alt="..." />
+      <a>파크지도</a></br>
+      <a>레고랜드를 한눈에 !</a>
+      </div>
+      <div class="guide2">
+        <img src="images/guide_img2.png" alt="..." />
+        <a>공식 모바일 앱</a></br>
+        <a>어플로 만나는 레고랜드 !</a>
+        </div>
+        <div class="guide3">
+        <img src="images/guide_img3.png" alt="..." />
+        <a>방문 전 확인사항</a></br>
+        <a>오기 전에 확인하면 좋아요 : )</a>
+        </div>
+        <div class="guide4">
+        <img src="images/guide_img4.png" alt="..." />
+        <a>편리사항</a></br>
+        <a>궁금한건 물어보세요 ~</a>
+        </div>
+    </div>
 
   <!-- SNS -->
+    <div class="sns">
+      <a>instagram |</a>
+      <a>#레고랜드</a>
+      <a>해시태그로 올려주세요!</a>
+      <div class="sns_img">
+      <a href="https://www.instagram.com/p/Cpv8D5jJiyR/"><img src="images/image_0.webp" alt="..." /></a>
+      <a href="https://www.instagram.com/p/CqCq9v_Jkfq/"><img src="images/image_3.webp" alt="..." /></a>
+      <a href="https://www.instagram.com/p/Cp31s6gJoSY/"><img src="images/image_2.webp" alt="..." /></a>
+      <a href="https://www.instagram.com/p/CqHMjvCrJFE/"><img src="images/image_4.webp" alt="..." /></a>
+      </div>
+    </div>
 
   <!-- FOOTER -->
   <footer>
-    <div class="inner">
-
-      <ul class="menu">
-        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-        <li><a href="javascript:void(0)">카드 이용약관</a></li>
-        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-      </ul>
-
-      <div class="btn-group">
-        <a href="javascript:void(0)">찾아오시는 길</a>
-        <a href="javascript:void(0)">신규입점제의</a>
-        <a href="javascript:void(0)">사이트 맵</a>
+    <div class="container">
+      <img src="./images/footer_logo.png" alt="LEGOLOGO">
+      <div class="vl"></div>
+  
+      <div class="footer_content">
+        <p class="footer_title">
+          <a>Policy</a>
+          <a>Terms & Conditions</a>
+          <a>Company</a>
+        </p>
+  
+        <div class="copyright">
+          &copy; <span id="year">2020</span> The LEGO Group. All rights reserved.
+        </div>
+      </div>
+  
+      <div class="wrap">
+      <div class="SNS">
+        <a href="javascript:void(0)"><img src="./images/facebook.png" alt=""></a>
+        <a href="javascript:void(0)"><img src="./images/twitter.png" alt=""></a>
+        <a href="javascript:void(0)"><img src="./images/Instagram.png" alt=""></a>
+        <!-- <a href="javascript:void(0)"><img src="./images/twitter.png" alt=""></a> -->
       </div>
 
-      <div class="info">
-        <span>사업자등록번호 : 617-81-99974 | 통신판매업신고번호 : 제 2021-강원춘천-0527호 |</span>
-        <span>대표자 : 매튜 폴 조엣 | 사업자등록번호 : 617-81-99974</span>
-        <span>대표번호 033) 815-2300 (연중 10:00~18:00 / 점심 휴식 12:00~13:00)</span>
+      <div class="contact-info">
+        <span>LLKR.Experience@legoland.com</span>
       </div>
-
-      <p class="copyright">
-        &copy; <span class="this-year"></span> The LEGO Group
-      </p>
-      <img src="" alt="" class="logo">
-
+    </div>
+      
     </div>
   </footer>
-
   
-    <!--TO TOP BUTTON-->
-    <div id="to-top">
-      <div class="material-icons">arrow_upward</div>
-    </div>
+  
   
 
 </body>
